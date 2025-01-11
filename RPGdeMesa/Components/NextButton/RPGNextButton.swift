@@ -13,7 +13,7 @@ struct RPGNextButton: View {
             .frame(width: 360.0, height: 52.0)
             .foregroundColor(.rpgLightGray)
             .overlay {
-                Text("Next")
+                Text("Avançar")
                     .bold()
                     .font(.title2)
                     .foregroundColor(.black)

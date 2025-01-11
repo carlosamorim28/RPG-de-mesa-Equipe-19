@@ -25,6 +25,10 @@
 		22D769802D31DF1700AC2141 /* SelectRPGButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D7697F2D31DF1700AC2141 /* SelectRPGButton.swift */; };
 		22D769832D31E9A600AC2141 /* ArrowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D769822D31E9A600AC2141 /* ArrowButton.swift */; };
 		22E5707A2D31F90500C8E430 /* FotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E570792D31F90500C8E430 /* FotoPicker.swift */; };
+		22E5707D2D32E08100C8E430 /* Picker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E5707C2D32E08100C8E430 /* Picker.swift */; };
+		22E5707F2D32E0CD00C8E430 /* PickerDropdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E5707E2D32E0CD00C8E430 /* PickerDropdown.swift */; };
+		22E570812D32E25100C8E430 /* PickerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E570802D32E25100C8E430 /* PickerButton.swift */; };
+		22E570862D33151700C8E430 /* ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E570852D33151700C8E430 /* ScrollView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +70,10 @@
 		22D7697F2D31DF1700AC2141 /* SelectRPGButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectRPGButton.swift; sourceTree = "<group>"; };
 		22D769822D31E9A600AC2141 /* ArrowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrowButton.swift; sourceTree = "<group>"; };
 		22E570792D31F90500C8E430 /* FotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FotoPicker.swift; sourceTree = "<group>"; };
+		22E5707C2D32E08100C8E430 /* Picker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Picker.swift; sourceTree = "<group>"; };
+		22E5707E2D32E0CD00C8E430 /* PickerDropdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerDropdown.swift; sourceTree = "<group>"; };
+		22E570802D32E25100C8E430 /* PickerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerButton.swift; sourceTree = "<group>"; };
+		22E570852D33151700C8E430 /* ScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +181,7 @@
 		22B1FF962D0BBD5A00F113F0 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				22E5707B2D32DEFA00C8E430 /* PickerButton */,
 				22D769812D31E18100AC2141 /* ArrowButton */,
 				22D7697E2D31DEE000AC2141 /* SelectRPGButton */,
 				22D7697D2D31DD7A00AC2141 /* NextButton */,
@@ -252,8 +261,19 @@
 			isa = PBXGroup;
 			children = (
 				22E570792D31F90500C8E430 /* FotoPicker.swift */,
+				22E5707C2D32E08100C8E430 /* Picker.swift */,
+				22E5707E2D32E0CD00C8E430 /* PickerDropdown.swift */,
+				22E570852D33151700C8E430 /* ScrollView.swift */,
 			);
 			path = Teste;
+			sourceTree = "<group>";
+		};
+		22E5707B2D32DEFA00C8E430 /* PickerButton */ = {
+			isa = PBXGroup;
+			children = (
+				22E570802D32E25100C8E430 /* PickerButton.swift */,
+			);
+			path = PickerButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -393,8 +413,12 @@
 				22D769802D31DF1700AC2141 /* SelectRPGButton.swift in Sources */,
 				22B1FF952D0BB2F400F113F0 /* CreateCharacter.swift in Sources */,
 				22B1FF992D0BBD9A00F113F0 /* RPGTextIField.swift in Sources */,
+				22E570812D32E25100C8E430 /* PickerButton.swift in Sources */,
+				22E570862D33151700C8E430 /* ScrollView.swift in Sources */,
 				2296F3092D26F4FC007C8191 /* RPGNextButton.swift in Sources */,
+				22E5707F2D32E0CD00C8E430 /* PickerDropdown.swift in Sources */,
 				22D769832D31E9A600AC2141 /* ArrowButton.swift in Sources */,
+				22E5707D2D32E08100C8E430 /* Picker.swift in Sources */,
 				22B1FF6B2D0BB21000F113F0 /* ContentView.swift in Sources */,
 				22B1FF692D0BB21000F113F0 /* RPGdeMesaApp.swift in Sources */,
 				22D769762D28C16600AC2141 /* ViewCharacter.swift in Sources */,

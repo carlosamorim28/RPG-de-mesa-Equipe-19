@@ -24,7 +24,6 @@ struct RPGTextIField: View {
                         RoundedRectangle(cornerRadius: 8.0)
                             .strokeBorder()
                     )
-                                
             }
         .padding(.vertical, 8)
     }

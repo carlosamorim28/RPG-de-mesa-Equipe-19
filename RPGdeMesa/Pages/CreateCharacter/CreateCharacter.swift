@@ -71,14 +71,14 @@ struct CreateCharacter: View {
                             .padding(.leading, 8)
                     }
                     HStack {
-                        RPGTextIField(value: $characterName, title: "Alinhamento Moral")
+                        PickerButton(options: ["Ordeiro e Bom", "Neutro e Bom", "Caótico e Bom"], title: "Alinhamento Moral")
                             .padding(.trailing, 8)
-                        RPGTextIField(value: $characterName, title: "Gênero")
+                        PickerButton(options: ["Outro", "Masculino", "Feminino"], title: "Gênero")
                             .padding(.leading, 8)
                     }
                     ScrollView(.horizontal) {
                         HStack(spacing: 16) {
-                            ForEach(0..<1) {_ in
+                            ForEach(0..<1) {index in
                                 RPGClassButton(buttonData: selectButtonStyle(value: .mage), onClick: {})
                                 RPGClassButton(buttonData: selectButtonStyle(value: .warrior), onClick: {})
                                 RPGClassButton(buttonData: selectButtonStyle(value: .assassin), onClick: {})
@@ -89,7 +89,7 @@ struct CreateCharacter: View {
                         }
                     }
                     Spacer()
-                        .frame(height: 88)
+                        .frame(height: 24)
                     NavigationLink {
                         SelectRace()
                         
