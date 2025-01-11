@@ -1,0 +1,715 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2296F3092D26F4FC007C8191 /* RPGNextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2296F3082D26F4FC007C8191 /* RPGNextButton.swift */; };
+		2296F30B2D285240007C8191 /* RPGTextFieldSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2296F30A2D285240007C8191 /* RPGTextFieldSection.swift */; };
+		22B1FF692D0BB21000F113F0 /* RPGdeMesaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B1FF682D0BB21000F113F0 /* RPGdeMesaApp.swift */; };
+		22B1FF6B2D0BB21000F113F0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B1FF6A2D0BB21000F113F0 /* ContentView.swift */; };
+		22B1FF6D2D0BB21100F113F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22B1FF6C2D0BB21100F113F0 /* Assets.xcassets */; };
+		22B1FF702D0BB21100F113F0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22B1FF6F2D0BB21100F113F0 /* Preview Assets.xcassets */; };
+		22B1FF7A2D0BB21100F113F0 /* RPGdeMesaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B1FF792D0BB21100F113F0 /* RPGdeMesaTests.swift */; };
+		22B1FF842D0BB21100F113F0 /* RPGdeMesaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B1FF832D0BB21100F113F0 /* RPGdeMesaUITests.swift */; };
+		22B1FF862D0BB21100F113F0 /* RPGdeMesaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B1FF852D0BB21100F113F0 /* RPGdeMesaUITestsLaunchTests.swift */; };
+		22B1FF952D0BB2F400F113F0 /* CreateCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B1FF942D0BB2F400F113F0 /* CreateCharacter.swift */; };
+		22B1FF992D0BBD9A00F113F0 /* RPGTextIField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B1FF982D0BBD9A00F113F0 /* RPGTextIField.swift */; };
+		22B1FF9C2D14F0FA00F113F0 /* RPGClassButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B1FF9B2D14F0FA00F113F0 /* RPGClassButton.swift */; };
+		22D769762D28C16600AC2141 /* ViewCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D769752D28C16600AC2141 /* ViewCharacter.swift */; };
+		22D769792D2DFE1F00AC2141 /* SelectRace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D769782D2DFE1F00AC2141 /* SelectRace.swift */; };
+		22D7697C2D2E006300AC2141 /* SelectRaceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D7697B2D2E006300AC2141 /* SelectRaceButton.swift */; };
+		22D769802D31DF1700AC2141 /* SelectRPGButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D7697F2D31DF1700AC2141 /* SelectRPGButton.swift */; };
+		22D769832D31E9A600AC2141 /* ArrowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D769822D31E9A600AC2141 /* ArrowButton.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		22B1FF762D0BB21100F113F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22B1FF5D2D0BB21000F113F0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22B1FF642D0BB21000F113F0;
+			remoteInfo = RPGdeMesa;
+		};
+		22B1FF802D0BB21100F113F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22B1FF5D2D0BB21000F113F0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22B1FF642D0BB21000F113F0;
+			remoteInfo = RPGdeMesa;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2296F3082D26F4FC007C8191 /* RPGNextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPGNextButton.swift; sourceTree = "<group>"; };
+		2296F30A2D285240007C8191 /* RPGTextFieldSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPGTextFieldSection.swift; sourceTree = "<group>"; };
+		22B1FF652D0BB21000F113F0 /* RPGdeMesa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RPGdeMesa.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		22B1FF682D0BB21000F113F0 /* RPGdeMesaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPGdeMesaApp.swift; sourceTree = "<group>"; };
+		22B1FF6A2D0BB21000F113F0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		22B1FF6C2D0BB21100F113F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		22B1FF6F2D0BB21100F113F0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		22B1FF752D0BB21100F113F0 /* RPGdeMesaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RPGdeMesaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		22B1FF792D0BB21100F113F0 /* RPGdeMesaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPGdeMesaTests.swift; sourceTree = "<group>"; };
+		22B1FF7F2D0BB21100F113F0 /* RPGdeMesaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RPGdeMesaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		22B1FF832D0BB21100F113F0 /* RPGdeMesaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPGdeMesaUITests.swift; sourceTree = "<group>"; };
+		22B1FF852D0BB21100F113F0 /* RPGdeMesaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPGdeMesaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		22B1FF942D0BB2F400F113F0 /* CreateCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCharacter.swift; sourceTree = "<group>"; };
+		22B1FF982D0BBD9A00F113F0 /* RPGTextIField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPGTextIField.swift; sourceTree = "<group>"; };
+		22B1FF9B2D14F0FA00F113F0 /* RPGClassButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPGClassButton.swift; sourceTree = "<group>"; };
+		22D769752D28C16600AC2141 /* ViewCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCharacter.swift; sourceTree = "<group>"; };
+		22D769782D2DFE1F00AC2141 /* SelectRace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectRace.swift; sourceTree = "<group>"; };
+		22D7697B2D2E006300AC2141 /* SelectRaceButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectRaceButton.swift; sourceTree = "<group>"; };
+		22D7697F2D31DF1700AC2141 /* SelectRPGButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectRPGButton.swift; sourceTree = "<group>"; };
+		22D769822D31E9A600AC2141 /* ArrowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrowButton.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		22B1FF622D0BB21000F113F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22B1FF722D0BB21100F113F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22B1FF7C2D0BB21100F113F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		22B1FF5C2D0BB21000F113F0 = {
+			isa = PBXGroup;
+			children = (
+				22B1FF672D0BB21000F113F0 /* RPGdeMesa */,
+				22B1FF782D0BB21100F113F0 /* RPGdeMesaTests */,
+				22B1FF822D0BB21100F113F0 /* RPGdeMesaUITests */,
+				22B1FF662D0BB21000F113F0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		22B1FF662D0BB21000F113F0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				22B1FF652D0BB21000F113F0 /* RPGdeMesa.app */,
+				22B1FF752D0BB21100F113F0 /* RPGdeMesaTests.xctest */,
+				22B1FF7F2D0BB21100F113F0 /* RPGdeMesaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		22B1FF672D0BB21000F113F0 /* RPGdeMesa */ = {
+			isa = PBXGroup;
+			children = (
+				22B1FF962D0BBD5A00F113F0 /* Components */,
+				22B1FF922D0BB26E00F113F0 /* Pages */,
+				22B1FF682D0BB21000F113F0 /* RPGdeMesaApp.swift */,
+				22B1FF6A2D0BB21000F113F0 /* ContentView.swift */,
+				22B1FF6C2D0BB21100F113F0 /* Assets.xcassets */,
+				22B1FF6E2D0BB21100F113F0 /* Preview Content */,
+			);
+			path = RPGdeMesa;
+			sourceTree = "<group>";
+		};
+		22B1FF6E2D0BB21100F113F0 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				22B1FF6F2D0BB21100F113F0 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		22B1FF782D0BB21100F113F0 /* RPGdeMesaTests */ = {
+			isa = PBXGroup;
+			children = (
+				22B1FF792D0BB21100F113F0 /* RPGdeMesaTests.swift */,
+			);
+			path = RPGdeMesaTests;
+			sourceTree = "<group>";
+		};
+		22B1FF822D0BB21100F113F0 /* RPGdeMesaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				22B1FF832D0BB21100F113F0 /* RPGdeMesaUITests.swift */,
+				22B1FF852D0BB21100F113F0 /* RPGdeMesaUITestsLaunchTests.swift */,
+			);
+			path = RPGdeMesaUITests;
+			sourceTree = "<group>";
+		};
+		22B1FF922D0BB26E00F113F0 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				22D769772D2DFD3700AC2141 /* SelectRace */,
+				22D769742D28C09000AC2141 /* ViewCharacter */,
+				22B1FF932D0BB28600F113F0 /* CreateCharacter */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		22B1FF932D0BB28600F113F0 /* CreateCharacter */ = {
+			isa = PBXGroup;
+			children = (
+				22B1FF942D0BB2F400F113F0 /* CreateCharacter.swift */,
+			);
+			path = CreateCharacter;
+			sourceTree = "<group>";
+		};
+		22B1FF962D0BBD5A00F113F0 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				22D769812D31E18100AC2141 /* ArrowButton */,
+				22D7697E2D31DEE000AC2141 /* SelectRPGButton */,
+				22D7697D2D31DD7A00AC2141 /* NextButton */,
+				22D7697A2D2E004900AC2141 /* SelectRaceButton */,
+				22B1FF9A2D14F04E00F113F0 /* ClassButton */,
+				22B1FF972D0BBD6600F113F0 /* TextField */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		22B1FF972D0BBD6600F113F0 /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				22B1FF982D0BBD9A00F113F0 /* RPGTextIField.swift */,
+				2296F30A2D285240007C8191 /* RPGTextFieldSection.swift */,
+			);
+			path = TextField;
+			sourceTree = "<group>";
+		};
+		22B1FF9A2D14F04E00F113F0 /* ClassButton */ = {
+			isa = PBXGroup;
+			children = (
+				22B1FF9B2D14F0FA00F113F0 /* RPGClassButton.swift */,
+			);
+			path = ClassButton;
+			sourceTree = "<group>";
+		};
+		22D769742D28C09000AC2141 /* ViewCharacter */ = {
+			isa = PBXGroup;
+			children = (
+				22D769752D28C16600AC2141 /* ViewCharacter.swift */,
+			);
+			path = ViewCharacter;
+			sourceTree = "<group>";
+		};
+		22D769772D2DFD3700AC2141 /* SelectRace */ = {
+			isa = PBXGroup;
+			children = (
+				22D769782D2DFE1F00AC2141 /* SelectRace.swift */,
+			);
+			path = SelectRace;
+			sourceTree = "<group>";
+		};
+		22D7697A2D2E004900AC2141 /* SelectRaceButton */ = {
+			isa = PBXGroup;
+			children = (
+				22D7697B2D2E006300AC2141 /* SelectRaceButton.swift */,
+			);
+			path = SelectRaceButton;
+			sourceTree = "<group>";
+		};
+		22D7697D2D31DD7A00AC2141 /* NextButton */ = {
+			isa = PBXGroup;
+			children = (
+				2296F3082D26F4FC007C8191 /* RPGNextButton.swift */,
+			);
+			path = NextButton;
+			sourceTree = "<group>";
+		};
+		22D7697E2D31DEE000AC2141 /* SelectRPGButton */ = {
+			isa = PBXGroup;
+			children = (
+				22D7697F2D31DF1700AC2141 /* SelectRPGButton.swift */,
+			);
+			path = SelectRPGButton;
+			sourceTree = "<group>";
+		};
+		22D769812D31E18100AC2141 /* ArrowButton */ = {
+			isa = PBXGroup;
+			children = (
+				22D769822D31E9A600AC2141 /* ArrowButton.swift */,
+			);
+			path = ArrowButton;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		22B1FF642D0BB21000F113F0 /* RPGdeMesa */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22B1FF892D0BB21100F113F0 /* Build configuration list for PBXNativeTarget "RPGdeMesa" */;
+			buildPhases = (
+				22B1FF612D0BB21000F113F0 /* Sources */,
+				22B1FF622D0BB21000F113F0 /* Frameworks */,
+				22B1FF632D0BB21000F113F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RPGdeMesa;
+			productName = RPGdeMesa;
+			productReference = 22B1FF652D0BB21000F113F0 /* RPGdeMesa.app */;
+			productType = "com.apple.product-type.application";
+		};
+		22B1FF742D0BB21100F113F0 /* RPGdeMesaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22B1FF8C2D0BB21100F113F0 /* Build configuration list for PBXNativeTarget "RPGdeMesaTests" */;
+			buildPhases = (
+				22B1FF712D0BB21100F113F0 /* Sources */,
+				22B1FF722D0BB21100F113F0 /* Frameworks */,
+				22B1FF732D0BB21100F113F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22B1FF772D0BB21100F113F0 /* PBXTargetDependency */,
+			);
+			name = RPGdeMesaTests;
+			productName = RPGdeMesaTests;
+			productReference = 22B1FF752D0BB21100F113F0 /* RPGdeMesaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		22B1FF7E2D0BB21100F113F0 /* RPGdeMesaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22B1FF8F2D0BB21100F113F0 /* Build configuration list for PBXNativeTarget "RPGdeMesaUITests" */;
+			buildPhases = (
+				22B1FF7B2D0BB21100F113F0 /* Sources */,
+				22B1FF7C2D0BB21100F113F0 /* Frameworks */,
+				22B1FF7D2D0BB21100F113F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22B1FF812D0BB21100F113F0 /* PBXTargetDependency */,
+			);
+			name = RPGdeMesaUITests;
+			productName = RPGdeMesaUITests;
+			productReference = 22B1FF7F2D0BB21100F113F0 /* RPGdeMesaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		22B1FF5D2D0BB21000F113F0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					22B1FF642D0BB21000F113F0 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					22B1FF742D0BB21100F113F0 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 22B1FF642D0BB21000F113F0;
+					};
+					22B1FF7E2D0BB21100F113F0 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 22B1FF642D0BB21000F113F0;
+					};
+				};
+			};
+			buildConfigurationList = 22B1FF602D0BB21000F113F0 /* Build configuration list for PBXProject "RPGdeMesa" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 22B1FF5C2D0BB21000F113F0;
+			productRefGroup = 22B1FF662D0BB21000F113F0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				22B1FF642D0BB21000F113F0 /* RPGdeMesa */,
+				22B1FF742D0BB21100F113F0 /* RPGdeMesaTests */,
+				22B1FF7E2D0BB21100F113F0 /* RPGdeMesaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		22B1FF632D0BB21000F113F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22B1FF702D0BB21100F113F0 /* Preview Assets.xcassets in Resources */,
+				22B1FF6D2D0BB21100F113F0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22B1FF732D0BB21100F113F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22B1FF7D2D0BB21100F113F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		22B1FF612D0BB21000F113F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22D7697C2D2E006300AC2141 /* SelectRaceButton.swift in Sources */,
+				22D769792D2DFE1F00AC2141 /* SelectRace.swift in Sources */,
+				2296F30B2D285240007C8191 /* RPGTextFieldSection.swift in Sources */,
+				22D769802D31DF1700AC2141 /* SelectRPGButton.swift in Sources */,
+				22B1FF952D0BB2F400F113F0 /* CreateCharacter.swift in Sources */,
+				22B1FF992D0BBD9A00F113F0 /* RPGTextIField.swift in Sources */,
+				2296F3092D26F4FC007C8191 /* RPGNextButton.swift in Sources */,
+				22D769832D31E9A600AC2141 /* ArrowButton.swift in Sources */,
+				22B1FF6B2D0BB21000F113F0 /* ContentView.swift in Sources */,
+				22B1FF692D0BB21000F113F0 /* RPGdeMesaApp.swift in Sources */,
+				22D769762D28C16600AC2141 /* ViewCharacter.swift in Sources */,
+				22B1FF9C2D14F0FA00F113F0 /* RPGClassButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22B1FF712D0BB21100F113F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22B1FF7A2D0BB21100F113F0 /* RPGdeMesaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22B1FF7B2D0BB21100F113F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22B1FF842D0BB21100F113F0 /* RPGdeMesaUITests.swift in Sources */,
+				22B1FF862D0BB21100F113F0 /* RPGdeMesaUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		22B1FF772D0BB21100F113F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22B1FF642D0BB21000F113F0 /* RPGdeMesa */;
+			targetProxy = 22B1FF762D0BB21100F113F0 /* PBXContainerItemProxy */;
+		};
+		22B1FF812D0BB21100F113F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22B1FF642D0BB21000F113F0 /* RPGdeMesa */;
+			targetProxy = 22B1FF802D0BB21100F113F0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		22B1FF872D0BB21100F113F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		22B1FF882D0BB21100F113F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		22B1FF8A2D0BB21100F113F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RPGdeMesa/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.helloworld.RPGdeMesa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		22B1FF8B2D0BB21100F113F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RPGdeMesa/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.helloworld.RPGdeMesa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		22B1FF8D2D0BB21100F113F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.helloworld.RPGdeMesaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RPGdeMesa.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RPGdeMesa";
+			};
+			name = Debug;
+		};
+		22B1FF8E2D0BB21100F113F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.helloworld.RPGdeMesaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RPGdeMesa.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RPGdeMesa";
+			};
+			name = Release;
+		};
+		22B1FF902D0BB21100F113F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.helloworld.RPGdeMesaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RPGdeMesa;
+			};
+			name = Debug;
+		};
+		22B1FF912D0BB21100F113F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.helloworld.RPGdeMesaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RPGdeMesa;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		22B1FF602D0BB21000F113F0 /* Build configuration list for PBXProject "RPGdeMesa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22B1FF872D0BB21100F113F0 /* Debug */,
+				22B1FF882D0BB21100F113F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22B1FF892D0BB21100F113F0 /* Build configuration list for PBXNativeTarget "RPGdeMesa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22B1FF8A2D0BB21100F113F0 /* Debug */,
+				22B1FF8B2D0BB21100F113F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22B1FF8C2D0BB21100F113F0 /* Build configuration list for PBXNativeTarget "RPGdeMesaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22B1FF8D2D0BB21100F113F0 /* Debug */,
+				22B1FF8E2D0BB21100F113F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22B1FF8F2D0BB21100F113F0 /* Build configuration list for PBXNativeTarget "RPGdeMesaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22B1FF902D0BB21100F113F0 /* Debug */,
+				22B1FF912D0BB21100F113F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 22B1FF5D2D0BB21000F113F0 /* Project object */;
+}
