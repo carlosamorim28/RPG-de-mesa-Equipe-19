@@ -6,15 +6,17 @@
 //
 
 import SwiftUI
+import PhotosUI
 
 struct CreateCharacter: View {
+    @State var selectedImage: UIImage? = nil
+    @State var selectedItem: PhotosPickerItem? = nil
     @State var characterName = ""
     @State var characterAge = ""
     @State var characterStature = ""
     @State var characterWeight = ""
     var body: some View {
         NavigationView{
-            
             ZStack {
                 Color.white.ignoresSafeArea()
                 VStack() { //Gerenciar tela
@@ -27,11 +29,45 @@ struct CreateCharacter: View {
                         RPGTextIField(value: $characterAge, title: "Idade")
                             .padding(.leading, 8)
                     }
-                    RPGTextIField(value: $characterName, title: "Avatar/Upload de Imagem do personagem")
+                    Text("Upload de Imagem do Personagem (png, jpg)")
+                        .bold()
+                    PhotosPicker(
+                        selection: $selectedItem,
+                        matching: .images,
+                        photoLibrary: .shared()) {
+                            HStack{
+                                Spacer()
+                                Text("Clique aqui")
+                                    .bold()
+                                    .padding()
+                                    .foregroundColor(.black)
+                                Image(systemName: "square.and.arrow.up")
+                                    .foregroundColor(.black)
+                                    .frame(width: 25, height: 25)
+                                    
+                                  
+                                Spacer()
+                            }
+                            .cornerRadius(8.0)
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 8.0)
+                                    .strokeBorder()
+                                    .foregroundColor(.black)
+                            )
+                        }
+                        .background(Color.white)
+                        .onChange(of: selectedItem) { newItem in
+                            Task {
+                                if let data = try? await newItem?.loadTransferable(type: Data.self),
+                                   let uiImage = UIImage(data: data) {
+                                    selectedImage = uiImage
+                                }
+                            }
+                        }
                     HStack {
                         RPGTextIField(value: $characterStature, title: "Altura")
                             .padding(.trailing, 8)
-                        RPGTextIField(value: $characterWeight, title: "Peso")
+                        RPGTextIField(value: $characterWeight, title: "Peso (Kg)")
                             .padding(.leading, 8)
                     }
                     HStack {
@@ -52,19 +88,13 @@ struct CreateCharacter: View {
                             }
                         }
                     }
-                    //                HStack() {
-                    //                    RPGClassButton(buttonData: selectButtonStyle(value: .mage), onClick: {})
-                    //                    RPGClassButton(buttonData: selectButtonStyle(value: .warrior), onClick: {})
-                    //                    RPGClassButton(buttonData: selectButtonStyle(value: .assassin), onClick: {})
-                    //                    RPGClassButton(buttonData: selectButtonStyle(value: .mage), onClick: {})
-                    //                    RPGClassButton(buttonData: selectButtonStyle(value: .warrior), onClick: {})
-                    //                    RPGClassButton(buttonData: selectButtonStyle(value: .assassin), onClick: {})
-                    //                }
                     Spacer()
                         .frame(height: 88)
-                    NavigationLink(destination: SelectRace()){
-                        RPGNextButton(
-                            onClick: {})
+                    NavigationLink {
+                        SelectRace()
+                        
+                    } label: {
+                        RPGNextButton()
                     }
                 }
                 Spacer()

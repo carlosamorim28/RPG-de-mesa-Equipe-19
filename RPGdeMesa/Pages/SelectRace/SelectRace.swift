@@ -29,7 +29,7 @@ struct SelectRace: View {
             SelectRaceButton(title: "Draconatos", click: {})
             Spacer()
                 .frame(height: 16)
-            RPGNextButton(onClick: {})
+            RPGNextButton()
         }
     }
 }

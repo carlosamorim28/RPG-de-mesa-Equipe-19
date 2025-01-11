@@ -15,8 +15,6 @@ struct ArrowButton: View {
             Circle()
                 .foregroundColor(.rpgLightGray)
                 .frame(width: width, height: height)
-            
-            
         }
     }
 }

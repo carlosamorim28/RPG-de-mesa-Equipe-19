@@ -13,6 +13,8 @@ struct RPGTextIField: View {
     var body: some View {
         VStack (alignment: .leading) { //Gerenciar "componente de texto"
                 Text(title)
+                .padding(.vertical, -4.0)
+                .bold()
                 TextField("", text: $value)
                     .padding(16)
                     .frame(height: 48)
@@ -24,6 +26,7 @@ struct RPGTextIField: View {
                     )
                                 
             }
+        .padding(.vertical, 8)
     }
 }
 
