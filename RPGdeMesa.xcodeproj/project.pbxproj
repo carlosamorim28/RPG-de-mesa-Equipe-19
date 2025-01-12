@@ -32,7 +32,8 @@
 		22E570892D334B9E00C8E430 /* CharacterAtributtes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E570882D334B9E00C8E430 /* CharacterAtributtes.swift */; };
 		22E5708C2D3353C700C8E430 /* PointsField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E5708B2D3353C700C8E430 /* PointsField.swift */; };
 		22F008D82D340A7700A27B0E /* ProfField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F008D72D340A7700A27B0E /* ProfField.swift */; };
-		22F008DA2D340E4400A27B0E /* testes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F008D92D340E4400A27B0E /* testes.swift */; };
+		22F008E02D343A1C00A27B0E /* ImageIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F008DF2D343A1C00A27B0E /* ImageIcon.swift */; };
+		22F008E22D343A9F00A27B0E /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F008E12D343A9F00A27B0E /* ProgressBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,7 +82,8 @@
 		22E570882D334B9E00C8E430 /* CharacterAtributtes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterAtributtes.swift; sourceTree = "<group>"; };
 		22E5708B2D3353C700C8E430 /* PointsField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsField.swift; sourceTree = "<group>"; };
 		22F008D72D340A7700A27B0E /* ProfField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfField.swift; sourceTree = "<group>"; };
-		22F008D92D340E4400A27B0E /* testes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testes.swift; sourceTree = "<group>"; };
+		22F008DF2D343A1C00A27B0E /* ImageIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageIcon.swift; sourceTree = "<group>"; };
+		22F008E12D343A9F00A27B0E /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +192,7 @@
 		22B1FF962D0BBD5A00F113F0 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				22F008DC2D34350500A27B0E /* ProgessBar */,
 				22E5708A2D33532600C8E430 /* PointsField */,
 				22E5707B2D32DEFA00C8E430 /* PickerButton */,
 				22D769812D31E18100AC2141 /* ArrowButton */,
@@ -198,7 +201,6 @@
 				22D7697A2D2E004900AC2141 /* SelectRaceButton */,
 				22B1FF9A2D14F04E00F113F0 /* ClassButton */,
 				22B1FF972D0BBD6600F113F0 /* TextField */,
-				22F008D72D340A7700A27B0E /* ProfField.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -275,7 +277,6 @@
 				22E5707C2D32E08100C8E430 /* Picker.swift */,
 				22E5707E2D32E0CD00C8E430 /* PickerDropdown.swift */,
 				22E570852D33151700C8E430 /* ScrollView.swift */,
-				22F008D92D340E4400A27B0E /* testes.swift */,
 			);
 			path = Teste;
 			sourceTree = "<group>";
@@ -299,9 +300,19 @@
 		22E5708A2D33532600C8E430 /* PointsField */ = {
 			isa = PBXGroup;
 			children = (
+				22F008D72D340A7700A27B0E /* ProfField.swift */,
 				22E5708B2D3353C700C8E430 /* PointsField.swift */,
 			);
 			path = PointsField;
+			sourceTree = "<group>";
+		};
+		22F008DC2D34350500A27B0E /* ProgessBar */ = {
+			isa = PBXGroup;
+			children = (
+				22F008DF2D343A1C00A27B0E /* ImageIcon.swift */,
+				22F008E12D343A9F00A27B0E /* ProgressBar.swift */,
+			);
+			path = ProgessBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -439,6 +450,7 @@
 				22D769792D2DFE1F00AC2141 /* SelectRace.swift in Sources */,
 				2296F30B2D285240007C8191 /* RPGTextFieldSection.swift in Sources */,
 				22E5707A2D31F90500C8E430 /* FotoPicker.swift in Sources */,
+				22F008E22D343A9F00A27B0E /* ProgressBar.swift in Sources */,
 				22E570892D334B9E00C8E430 /* CharacterAtributtes.swift in Sources */,
 				22D769802D31DF1700AC2141 /* SelectRPGButton.swift in Sources */,
 				22B1FF952D0BB2F400F113F0 /* CreateCharacter.swift in Sources */,
@@ -448,12 +460,12 @@
 				22E570862D33151700C8E430 /* ScrollView.swift in Sources */,
 				2296F3092D26F4FC007C8191 /* RPGNextButton.swift in Sources */,
 				22E5707F2D32E0CD00C8E430 /* PickerDropdown.swift in Sources */,
+				22F008E02D343A1C00A27B0E /* ImageIcon.swift in Sources */,
 				22D769832D31E9A600AC2141 /* ArrowButton.swift in Sources */,
 				22E5707D2D32E08100C8E430 /* Picker.swift in Sources */,
 				22B1FF6B2D0BB21000F113F0 /* ContentView.swift in Sources */,
 				22B1FF692D0BB21000F113F0 /* RPGdeMesaApp.swift in Sources */,
 				22D769762D28C16600AC2141 /* ViewCharacter.swift in Sources */,
-				22F008DA2D340E4400A27B0E /* testes.swift in Sources */,
 				22B1FF9C2D14F0FA00F113F0 /* RPGClassButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
