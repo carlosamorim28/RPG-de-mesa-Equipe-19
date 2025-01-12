@@ -40,8 +40,7 @@ struct SelectRace: View {
           }
         }.frame(height: 470)
         NavigationLink {
-            //Proxima tela
-            
+          CharacterAtributtes()
         } label: {
             RPGNextButton()
                 .padding(.top, 45.0)

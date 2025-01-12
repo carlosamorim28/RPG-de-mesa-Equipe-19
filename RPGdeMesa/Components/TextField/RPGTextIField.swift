@@ -10,16 +10,18 @@ import SwiftUI
 struct RPGTextIField: View {
     @Binding var value: String
     var title = ""
+    var textInitial: String
     var body: some View {
         VStack (alignment: .leading) { //Gerenciar "componente de texto"
                 Text(title)
                 .padding(.vertical, -4.0)
                 .bold()
-                TextField("", text: $value)
+                TextField(textInitial, text: $value)
                     .padding(16)
                     .frame(height: 48)
                     .border(Color.black)
                     .cornerRadius(8.0)
+                    .background(Color.white)
                     .overlay(
                         RoundedRectangle(cornerRadius: 8.0)
                             .strokeBorder()
@@ -30,5 +32,5 @@ struct RPGTextIField: View {
 }
 
 #Preview {
-    RPGTextIField(value: .constant("teste"))
+    RPGTextIField(value: .constant("teste"), textInitial: "Texto inicial")
 }

@@ -23,11 +23,11 @@ struct CreateCharacter: View {
                     Spacer()
                         .frame(height: 40)
                     HStack {
-                        RPGTextIField(value: $characterName, title: "Nome do personagem")
+                        RPGTextIField(value: $characterName, title: "Nome do personagem", textInitial: "Ex: Harry Potter")
                             .frame(width: 250)
                             .padding(.trailing, 8.0)
-                        RPGTextIField(value: $characterAge, title: "Idade")
-                            .padding(.leading, 8)
+                        RPGTextIField(value: $characterAge, title: "Idade", textInitial: "Ex: 20")
+                            .padding(.leading, 8.0)
                     }
                     Text("Upload de Imagem do Personagem (png, jpg)")
                         .bold()
@@ -65,9 +65,9 @@ struct CreateCharacter: View {
                             }
                         }
                     HStack {
-                        RPGTextIField(value: $characterStature, title: "Altura")
+                        RPGTextIField(value: $characterStature, title: "Altura", textInitial: "Ex: 1,60")
                             .padding(.trailing, 8)
-                        RPGTextIField(value: $characterWeight, title: "Peso (Kg)")
+                        RPGTextIField(value: $characterWeight, title: "Peso (Kg)", textInitial: "Ex: 60")
                             .padding(.leading, 8)
                     }
                     HStack {
