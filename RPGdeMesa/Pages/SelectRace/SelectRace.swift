@@ -9,6 +9,9 @@ import SwiftUI
 
 struct SelectRace: View {
     var body: some View {
+//        ProgressBar()
+        Spacer()
+            .frame(height: 24)
         ScrollView(.vertical) {
             VStack(spacing: 16) {
                 ForEach(0..<1) {index in

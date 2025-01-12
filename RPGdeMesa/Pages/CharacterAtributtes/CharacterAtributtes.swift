@@ -20,6 +20,9 @@ struct CharacterAtributtes: View {
     @State var characterSpd: Int = 0
     @State var characterProf: Int = 0
     var body: some View {
+//        ProgressBar()
+//        Spacer()
+//            .frame(height: 24)
         VStack(alignment: .leading){
             ProfField(value: $characterProf)
             Spacer()
@@ -59,11 +62,11 @@ struct CharacterAtributtes: View {
             }
             
         }.padding(.horizontal, 16.0)
-        NavigationLink {
-            //proxima tela
-        } label: {
+//        NavigationLink {
+//            //proxima tela
+//        } label: {
             RPGNextButton()
-        }
+//        }
     }
 }
 

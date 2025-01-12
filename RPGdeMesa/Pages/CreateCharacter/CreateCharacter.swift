@@ -16,12 +16,12 @@ struct CreateCharacter: View {
     @State var characterStature = ""
     @State var characterWeight = ""
     var body: some View {
+//        ProgressBar()
         NavigationView{
             ZStack {
                 Color.white.ignoresSafeArea()
                 VStack() { //Gerenciar tela
-                    Spacer()
-                        .frame(height: 40)
+
                     HStack {
                         RPGTextIField(value: $characterName, title: "Nome do personagem", textInitial: "Ex: Harry Potter")
                             .frame(width: 250)
@@ -44,8 +44,6 @@ struct CreateCharacter: View {
                                 Image(systemName: "square.and.arrow.up")
                                     .foregroundColor(.black)
                                     .frame(width: 25, height: 25)
-                                    
-                                  
                                 Spacer()
                             }
                             .cornerRadius(8.0)
@@ -81,10 +79,10 @@ struct CreateCharacter: View {
                             ForEach(0..<1) {index in
                                 RPGClassButton(buttonData: selectButtonStyle(value: .mage), onClick: {})
                                 RPGClassButton(buttonData: selectButtonStyle(value: .warrior), onClick: {})
-                                RPGClassButton(buttonData: selectButtonStyle(value: .assassin), onClick: {})
-                                RPGClassButton(buttonData: selectButtonStyle(value: .mage), onClick: {})
-                                RPGClassButton(buttonData: selectButtonStyle(value: .warrior), onClick: {})
-                                RPGClassButton(buttonData: selectButtonStyle(value: .assassin), onClick: {})
+                                RPGClassButton(buttonData: selectButtonStyle(value: .barbarian), onClick: {})
+                                RPGClassButton(buttonData: selectButtonStyle(value: .druid), onClick: {})
+                                RPGClassButton(buttonData: selectButtonStyle(value: .cleric), onClick: {})
+                                RPGClassButton(buttonData: selectButtonStyle(value: .rogue), onClick: {})
                             }
                         }
                     }

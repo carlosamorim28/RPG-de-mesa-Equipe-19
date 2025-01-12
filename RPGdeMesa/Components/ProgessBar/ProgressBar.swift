@@ -12,7 +12,7 @@ struct ProgressBar: View {
         ZStack{
             Color(.rpgLightGray)
                 .clipShape(Rectangle())
-                .frame(width: 430.0, height: 8.0)
+                .frame(width: 393.0, height: 8.0)
             HStack(spacing: 25){
                 SwiftUIView(imageIcon: "cursorarrow.click")
                 SwiftUIView(imageIcon: "paintpalette")
