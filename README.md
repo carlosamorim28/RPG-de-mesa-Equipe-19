@@ -3,7 +3,7 @@
 
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Face%20with%20Monocle.png" alt="Face with Monocle" width="25" height="25" /> O que é a CharCraft? <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Face%20with%20Raised%20Eyebrow.png" alt="Face with Raised Eyebrow" width="25" height="25" />
 
-CharCraft é uma ferramenta simples e intuitiva para criar, editar e visualizar personagens de RPG de mesa, além de oferecer um gerador de histórias para aventuras épicas.
+CharCraft é uma ferramenta simples e intuitiva para criar, editar e visualizar personagens de RPG de mesa, além de oferecer um gerador de histórias para aventuras épicas. Para mais informações sobre como foi o processo de criação, acesse o nosso Notion [clicando aqui](https://golden-unicorn-80c.notion.site/Equipe-19-RPG-de-Mesa-1384cfb6ec5f804eb4d1d30463be002c?pvs=74)
 
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/People/Man%20Technologist.webp" alt="Man Technologist" width="25" height="25" /> Tecnologias utilizadas
 
