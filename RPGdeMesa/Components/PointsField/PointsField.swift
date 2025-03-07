@@ -16,6 +16,7 @@ struct PointsField: View {
             Text(title)
             .padding(.vertical, -4.0)
             .fontWeight(.medium)
+            .font(.system(size: 16))
             TextField("", text: $textValue)
                 .multilineTextAlignment(.center)
                 .padding(16)
@@ -26,6 +27,7 @@ struct PointsField: View {
                 .overlay(
                     RoundedRectangle(cornerRadius: 8.0)
                         .strokeBorder()
+                        .foregroundColor(.rpgStrokeChar)
                 )
                 .onChange(of: textValue) { newValue in
                                    if let intValue = Int(newValue) {

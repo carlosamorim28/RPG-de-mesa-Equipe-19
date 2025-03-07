@@ -17,10 +17,13 @@ struct ProfField: View {
                 .padding(16)
                 .frame(width: 64, height: 64)
                 .background(Color.white)
+                .foregroundColor(.rpgBlue)
+                .bold()
+                .font(.largeTitle)
                 .clipShape(Circle())
                 .overlay(
                     Circle()
-                        .strokeBorder(Color.black)
+                        .strokeBorder(Color.rpgStrokeChar)
                 )
                 .onChange(of: textValue) { newValue in
                                    if let intValue = Int(newValue) {

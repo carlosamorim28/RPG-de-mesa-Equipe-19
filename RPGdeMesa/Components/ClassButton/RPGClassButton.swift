@@ -26,7 +26,7 @@ struct RPGClassButton: View {
     var onClick: () -> Void
     var body: some View {
        RoundedRectangle(cornerRadius: 8)
-            .strokeBorder(lineWidth: 2.0)
+            .strokeBorder(lineWidth: 1.0)
             .frame(width: 100, height: 100)
             .foregroundColor(buttonData.backgroundColor)
             .onTapGesture {
@@ -34,7 +34,7 @@ struct RPGClassButton: View {
             }
             .overlay {
                 VStack(spacing: 10){
-                    Image(systemName: buttonData.imageClass)
+                    Image(buttonData.imageClass)
                         .foregroundColor(buttonData.backgroundColor)
                         .font(.title)
    
@@ -43,23 +43,24 @@ struct RPGClassButton: View {
                         .fontWeight(.medium)
                 }
             }
+            .background(Color.white)
     }
 }
 
 func selectButtonStyle (value: TypeButton) -> ButtonDataModel {
     switch value{
     case .mage:
-        return ButtonDataModel(backgroundColor: .blue, title: "Mago", imageClass: "paintpalette")
+        return ButtonDataModel(backgroundColor: .blue, title: "Mago", imageClass: "rpgMageIcon")
     case .warrior:
-        return ButtonDataModel(backgroundColor: .red, title: "Guerreiro", imageClass: "")
+        return ButtonDataModel(backgroundColor: .red, title: "Guerreiro", imageClass: "rpgWarriorIcon")
     case .rogue:
-        return ButtonDataModel(backgroundColor: .yellow, title: "Ladino", imageClass: "")
+        return ButtonDataModel(backgroundColor: .yellow, title: "Ladino", imageClass: "rpgRogueIcon")
     case .druid:
-        return ButtonDataModel(backgroundColor: .green, title: "Druida", imageClass: "")
+        return ButtonDataModel(backgroundColor: .green, title: "Druida", imageClass: "rpgDruidIcon")
     case .barbarian:
-        return ButtonDataModel(backgroundColor: .orange, title: "Bárbaro", imageClass: "")
+        return ButtonDataModel(backgroundColor: .orange, title: "Bárbaro", imageClass: "rpgBarbarianIcon")
     case .cleric:
-        return ButtonDataModel(backgroundColor: .purple, title: "Clérigo", imageClass: "")
+        return ButtonDataModel(backgroundColor: .purple, title: "Clérigo", imageClass: "rpgClericIcon")
     }
 }
 

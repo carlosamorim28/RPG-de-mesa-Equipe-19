@@ -10,34 +10,27 @@ import SwiftUI
 struct SelectRaceButton: View {
     var imageCharacter: String = "rpgCharacter"
     var title: String = "Title"
-//    var descricao: String = "Descricao"
     var click: () -> Void
     var body: some View {
         ZStack{
             Color(.white)
-            VStack(alignment: .leading){
-                Image(.rpgSystem)
+            VStack(alignment: .leading, spacing: 8.0){
+                Image(.rpgCharacter)
                     .resizable()
                     .frame(width: 171, height: 105)
                     .clipShape(RoundedRectangle(cornerRadius: 8))
-                Spacer()
-                    .frame(height: 8)
                 Text(title)
                     .font(.system(size: 20))
-                    .bold()
+                    .fontWeight(.medium)
                     .padding(.horizontal, 8.0)
-                Spacer()
-                    .frame(height: 8)
-//                Text(descricao)
-//                    .font(.system(size: 14))
-//                    .bold()
-//                Spacer()
-                
             }
         }
         .clipShape(RoundedRectangle(cornerRadius: 8.0))
         .frame(width: 171, height: 146)
-        .shadow(color: Color.black.opacity(0.25), radius: 9.1)
+        .overlay(
+            RoundedRectangle(cornerRadius: 8)
+                .strokeBorder(lineWidth: 2.0)
+                .foregroundColor(.rpgStrokeChar))
         .onTapGesture {
             click()
         }

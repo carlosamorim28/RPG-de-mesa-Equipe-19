@@ -13,8 +13,9 @@ struct SwiftUIView: View {
         ZStack{
             Circle()
                 .frame(width: 40.0, height: 40.0)
-                .foregroundColor(.rpgLightGray)
+                .foregroundColor(.rpgBlue)
             Image(systemName: imageIcon)
+                .foregroundColor(.white)
                 .frame(width: 20.0, height: 20.0)
         }
     }

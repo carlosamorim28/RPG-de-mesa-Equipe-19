@@ -41,7 +41,9 @@ struct PickerButton: View {
             .overlay(
                 RoundedRectangle(cornerRadius: 8.0)
                     .strokeBorder()
+                    .foregroundColor(.rpgStrokeChar)
             )
+            .background(Color.white)
         }
     }
 }

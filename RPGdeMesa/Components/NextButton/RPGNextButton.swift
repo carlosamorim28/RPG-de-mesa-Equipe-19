@@ -11,12 +11,12 @@ struct RPGNextButton: View {
     var body: some View {
         RoundedRectangle(cornerRadius: 8.0)
             .frame(width: 360.0, height: 52.0)
-            .foregroundColor(.rpgLightGray)
+            .foregroundColor(.rpgBlue)
             .overlay {
                 Text("Avançar")
                     .bold()
-                    .font(.title2)
-                    .foregroundColor(.black)
+                    .font(.system(size: 24))
+                    .foregroundColor(.white)
             }
    }
 }
