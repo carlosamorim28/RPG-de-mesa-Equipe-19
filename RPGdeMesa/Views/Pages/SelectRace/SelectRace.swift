@@ -14,7 +14,6 @@ struct SelectRace: View {
             Color.rpgBackground.ignoresSafeArea()
             
             ZStack{
-                Color.rpgBackground.ignoresSafeArea()
                 VStack{
                     Spacer().frame(height: 170)
                     ScrollView(.vertical) {
@@ -41,7 +40,7 @@ struct SelectRace: View {
                                 }
                            }
                                 
-                      }
+                        }.padding(16)
                     }.frame(height: 550)
                     Spacer()
                     VStack{

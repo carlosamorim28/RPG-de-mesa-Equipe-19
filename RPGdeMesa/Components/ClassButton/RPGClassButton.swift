@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-enum TypeButton {
+enum TypeButton: CaseIterable {
     case warrior
     case mage
     case rogue
@@ -15,7 +15,6 @@ enum TypeButton {
     case cleric
 }
 struct ButtonDataModel {
-    var backgroundColor: Color
     var title: String
     var imageClass: String
     
@@ -23,47 +22,72 @@ struct ButtonDataModel {
 
 struct RPGClassButton: View {
     var buttonData: ButtonDataModel
+    var isSelected: Bool
     var onClick: () -> Void
     var body: some View {
        RoundedRectangle(cornerRadius: 8)
             .strokeBorder(lineWidth: 1.0)
             .frame(width: 100, height: 100)
-            .foregroundColor(buttonData.backgroundColor)
+            .foregroundColor(isSelected ? Color.rpgBlue : Color.black)
+            .background(isSelected ? Color.rpgBlue : Color.rpgBackground)
             .onTapGesture {
-                onClick()
+                withAnimation{
+                    onClick()
+                }
             }
             .overlay {
                 VStack(spacing: 10){
                     Image(buttonData.imageClass)
-                        .foregroundColor(buttonData.backgroundColor)
+                        .foregroundColor(isSelected ? Color.white : Color.black)
                         .font(.title)
    
                     Text(buttonData.title)
-                        .foregroundColor(buttonData.backgroundColor)
+                        .foregroundColor(isSelected ? Color.white : Color.black)
                         .fontWeight(.medium)
                 }
             }
-            .background(Color.white)
     }
 }
 
-func selectButtonStyle (value: TypeButton) -> ButtonDataModel {
-    switch value{
+struct ClassSelectionView: View {
+    @ObservedObject var characterViewModel: CharacterViewModel
+
+    var body: some View {
+        ScrollView(.horizontal) {
+            HStack(spacing: 16) {
+                ForEach(TypeButton.allCases, id: \.self) { classType in
+                    let (buttonData, classString) = selectButtonStyle(value: classType)
+                    RPGClassButton(
+                        buttonData: buttonData,
+                        isSelected: characterViewModel.newCharacter.classType == classString,
+                        onClick: {
+                            characterViewModel.newCharacter.classType = classString
+                        }
+                    )
+                }
+            }
+            .padding(10)
+        }
+    }
+}
+
+func selectButtonStyle(value: TypeButton) -> (ButtonDataModel, String) {
+    switch value {
     case .mage:
-        return ButtonDataModel(backgroundColor: .blue, title: "Mago", imageClass: "rpgMageIcon")
+        return (ButtonDataModel(title: "Mago", imageClass: "rpgMageIcon"), "Mage")
     case .warrior:
-        return ButtonDataModel(backgroundColor: .red, title: "Guerreiro", imageClass: "rpgWarriorIcon")
+        return (ButtonDataModel(title: "Guerreiro", imageClass: "rpgWarriorIcon"), "Warrior")
     case .rogue:
-        return ButtonDataModel(backgroundColor: .yellow, title: "Ladino", imageClass: "rpgRogueIcon")
+        return (ButtonDataModel(title: "Ladino", imageClass: "rpgRogueIcon"), "Rogue")
     case .druid:
-        return ButtonDataModel(backgroundColor: .green, title: "Druida", imageClass: "rpgDruidIcon")
+        return (ButtonDataModel(title: "Druida", imageClass: "rpgDruidIcon"), "Druid")
     case .barbarian:
-        return ButtonDataModel(backgroundColor: .orange, title: "Bárbaro", imageClass: "rpgBarbarianIcon")
+        return (ButtonDataModel(title: "Bárbaro", imageClass: "rpgBarbarianIcon"), "Barbarian")
     case .cleric:
-        return ButtonDataModel(backgroundColor: .purple, title: "Clérigo", imageClass: "rpgClericIcon")
+        return (ButtonDataModel(title: "Clérigo", imageClass: "rpgClericIcon"), "Cleric")
     }
 }
-
 #Preview {
-    RPGClassButton(buttonData: selectButtonStyle(value: .mage), onClick: {print("clicou!")})
+//    RPGClassButton(buttonData: selectButtonStyle(value: .mage), isSelected: Bool, onClick: {print("clicou!")})
+    ClassSelectionView(characterViewModel: CharacterViewModel())
 }

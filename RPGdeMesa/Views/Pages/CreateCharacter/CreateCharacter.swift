@@ -7,7 +7,6 @@
 
 import SwiftUI
 import PhotosUI
-
 struct CreateCharacter: View {
     @State private var selectedItem: PhotosPickerItem? = nil
     @State private var selectedImage: UIImage? = nil
@@ -15,12 +14,12 @@ struct CreateCharacter: View {
     var body: some View {
         ZStack {
             Color.rpgBackground.ignoresSafeArea()
-            VStack(spacing: 16){
-                NavigationBar(title: "Informações Básicas & Aparência")
-                ProgressBar()
-                Spacer()
-            }.ignoresSafeArea()
-            
+//            VStack(spacing: 16){
+//                NavigationBar(title: "Informações Básicas & Aparência")
+//                ProgressBar()
+//                Spacer()
+//            }.ignoresSafeArea()
+//            
             ZStack{
                 VStack() { //Gerenciar tela
                     HStack {
@@ -75,18 +74,7 @@ struct CreateCharacter: View {
                         PickerButton(options: ["Outro", "Masculino", "Feminino"], title: "Gênero")
                             .padding(.leading, 8)
                     }
-                    ScrollView(.horizontal) {
-                        HStack(spacing: 16) {
-                            ForEach(0..<1) {index in
-                                RPGClassButton(buttonData: selectButtonStyle(value: .mage), onClick: {characterViewModel.newCharacter.classType = "Mage"})
-                                RPGClassButton(buttonData: selectButtonStyle(value: .warrior), onClick: {characterViewModel.newCharacter.classType = "Warrior"})
-                                RPGClassButton(buttonData: selectButtonStyle(value: .barbarian), onClick: {characterViewModel.newCharacter.classType = "Barbarian"})
-                                RPGClassButton(buttonData: selectButtonStyle(value: .druid), onClick: {characterViewModel.newCharacter.classType = "Druid"})
-                                RPGClassButton(buttonData: selectButtonStyle(value: .cleric), onClick: {characterViewModel.newCharacter.classType = "Cleric"})
-                                RPGClassButton(buttonData: selectButtonStyle(value: .rogue), onClick: {characterViewModel.newCharacter.classType = "Rogue"})
-                            }
-                        }
-                    }
+                    ClassSelectionView(characterViewModel: CharacterViewModel())
                     Spacer()
                         .frame(height: 100)
                     NavigationLink {
@@ -94,9 +82,14 @@ struct CreateCharacter: View {
                     } label: {
                         RPGNextButton()
                     }
-                }.padding(.top, 150.0)
+                }.padding(.top, 160.0)
                 Spacer()
             }.padding(16)
+            VStack(spacing: 16){
+                NavigationBar(title: "Informações Básicas & Aparência")
+                ProgressBar()
+                Spacer()
+            }.ignoresSafeArea()
         }.navigationBarHidden(true)
     }
 }

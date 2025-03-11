@@ -7,10 +7,9 @@
 
 import Foundation
 
-@Observable
-class CharacterViewModel{
-    var listCharacters: [CharacterModel] = []
-    var newCharacter: CharacterModel = CharacterModel()
+class CharacterViewModel: ObservableObject{
+    @Published var listCharacters: [CharacterModel] = [CharacterModel()]
+    @Published var newCharacter: CharacterModel = CharacterModel()
     func addCharacter(character: CharacterModel){
         listCharacters.append(character)
     }
