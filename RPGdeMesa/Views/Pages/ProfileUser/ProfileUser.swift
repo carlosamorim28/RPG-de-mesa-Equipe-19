@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ProfileUser: View {
+    @State var isCharacterSelected: Bool = true
+    var viewModel: CharacterViewModel
     var body: some View {
         ZStack{
             Color.rpgBackground.ignoresSafeArea()
@@ -19,35 +21,41 @@ struct ProfileUser: View {
             VStack{
                 HStack(spacing: -8){
                     ProfilePhoto()
-                    Text("@NicollyDev")
+                    Text("@Usuário")
                         .font(.system(size: 24))
                         .padding(.top, 30)
                     Spacer()
                 }.padding(.bottom, 12)
 
-                HStack(/*alignment: .top,*/ spacing: 28){
-                    Text("\(06.formatted(.number.precision(.integerLength(2)))) \nPersonagens \ncriados")
+                HStack(alignment: .top, spacing: 28){
+                    Text("\(viewModel.listCharacters.count.formatted(.number.precision(.integerLength(2)))) \nPersonagens \ncriados")
                         .multilineTextAlignment(.center)
                     
-                    Text("\(06.formatted(.number.precision(.integerLength(2)))) \nConquistas")
+                    Text("\(02.formatted(.number.precision(.integerLength(2)))) \nConquistas")
                         .multilineTextAlignment(.center)
                     
-                    Text("\(06.formatted(.number.precision(.integerLength(2)))) \nSistema de RPG \nExplorado")
+                    Text("\(01.formatted(.number.precision(.integerLength(2)))) \nSistema de RPG \nExplorado")
                         .multilineTextAlignment(.center)
                 }
                 HStack(spacing: 8){
-                    ProfileButton(isPressed: true, title: "Personagens")
-                    ProfileButton(isPressed: false, title: "Conquistas")
+                    ProfileButton(isPressed: $isCharacterSelected, title: "Personagens")
+                    ProfileButton(isPressed: $isCharacterSelected, invert: true, title: "Conquistas")
                 }
                 .padding(10)
                 .background(Color.white)
-                ListView()
+                if(isCharacterSelected){
+                    ListView()
+                        .transition(.opacity)
+                }else {
+                    AchievementsView()
+                        .transition(.opacity)
+                }
                 Spacer()
             }.padding(.top, 70)
-        }
+        }.navigationBarHidden(true)
     }
 }
 
 #Preview {
-    ProfileUser()
+    ProfileUser(viewModel: CharacterViewModel())
 }

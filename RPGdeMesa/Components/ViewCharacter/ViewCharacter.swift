@@ -18,9 +18,9 @@ struct ViewCharacter: View {
                     .frame(height: 160)
                     .overlay{
                         VStack{
-                            rpgAlgumacoisa()
-                            rpgAlgumacoisa()
-                            rpgAlgumacoisa()
+                            RPGAtributtes()
+                            RPGAtributtes()
+                            RPGAtributtes()
                         }
                         .frame(maxWidth: .infinity, alignment: .trailing)
                         .padding(.all, 8.0)

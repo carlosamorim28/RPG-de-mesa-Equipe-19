@@ -17,11 +17,12 @@ struct PointsField: View {
             .padding(.vertical, -4.0)
             .fontWeight(.medium)
             .font(.system(size: 16))
+            .foregroundColor(.rpgTextPrimary)
             TextField("", text: $textValue)
                 .multilineTextAlignment(.center)
                 .padding(16)
                 .frame(height: 48)
-                .background(Color.white)
+                .background(Color.rpgBackgroundText)
                 .border(Color.black)
                 .cornerRadius(8.0)
                 .overlay(

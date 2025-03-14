@@ -8,17 +8,22 @@
 import SwiftUI
 
 struct RPGDetailsButton: View {
+//    var characterViewModel: CharacterViewModel
     var body: some View {
-        HStack(spacing: 8){
-            Text("Ver detalhes")
-                .font(.system(size: 16))
-                .fontWeight(.light)
-                .foregroundColor(.rpgBlue)
-            Image(.navigationIcon2)
+        NavigationLink {
+//            CharacterView(characterViewModel: characterViewModel)
+        } label: {
+            HStack(spacing: 8){
+                Text("Ver detalhes")
+                    .font(.system(size: 16))
+                    .fontWeight(.light)
+                    .foregroundColor(.rpgBlue)
+                Image(.navigationIcon2)
+            }
         }
     }
 }
 
 #Preview {
-    RPGDetailsButton()
+    RPGDetailsButton(/*characterViewModel: characterViewModel*/)
 }

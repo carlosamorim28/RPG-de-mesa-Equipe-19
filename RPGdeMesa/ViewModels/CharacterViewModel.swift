@@ -7,10 +7,24 @@
 
 import Foundation
 
-class CharacterViewModel: ObservableObject{
-    @Published var listCharacters: [CharacterModel] = [CharacterModel()]
-    @Published var newCharacter: CharacterModel = CharacterModel()
+@Observable
+class CharacterViewModel{
+    var listCharacters: [CharacterModel] = []
+    
+    var newCharacter: CharacterModel = CharacterModel()
+    
     func addCharacter(character: CharacterModel){
-        listCharacters.append(character)
+            listCharacters.insert(character, at: 0)
     }
+    
+//    func deleteCharacter(at offsets: IndexSet){
+//        for index in offsets {
+//            listCharacters.remove(SwiftDataCharacterModel[index])
+//        }
+//    }
 }
+//deleteNote(at offsets: IndexSet) {
+//        for index in offsets {
+//            modelContext.delete(notes[index])
+//        }
+//    }

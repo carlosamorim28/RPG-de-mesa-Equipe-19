@@ -17,20 +17,20 @@ struct ProfileNavigationBar: View {
                     HStack(spacing: 16){
                         ZStack{
                             Circle()
-                                .foregroundColor(.white)
+                                .foregroundColor(.rpgTextSecundary)
                                 .frame(width: 46)
                             Image(.navigationIcon)
-                                .foregroundColor(.black)
+                                .foregroundColor(.rpgTextPrimary)
                         }.onTapGesture {
                             dismiss()
                         }
                         Spacer()
                         ZStack{
                             Circle()
-                                .foregroundColor(.white)
+                                .foregroundColor(.rpgTextSecundary)
                                 .frame(width: 46)
                             Image(.rpgEditIcon)
-                                .foregroundColor(.black)
+                                .foregroundColor(.rpgTextPrimary)
                         }
                     }.padding(16)
                         .padding(.top, 36)

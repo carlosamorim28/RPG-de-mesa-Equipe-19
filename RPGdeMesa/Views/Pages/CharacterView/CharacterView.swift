@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct CharacterView: View {
     @Binding var characterViewModel: CharacterViewModel
@@ -17,14 +18,16 @@ struct CharacterView: View {
                     VStack(alignment: .leading, spacing: 16) {
                         ForEach(0..<1) {index in
                             Spacer()
-                                .frame(height: 190)
+                                .frame(height: 100)
+
                             ViewCharacter(character: CharacterModel())
                             
                             Text("Estatísticas & Atributos")
                                 .fontWeight(.medium)
                                 .font(.system(size: 24))
                             
-                            ProfField(value: $characterViewModel.newCharacter.profBonus) //diminuir tamanho
+                            ProfField(value: $characterViewModel.newCharacter.profBonus)
+                                .disabled(true)
                             
                             HStack(spacing: 8){
                                 PointsField(value: $characterViewModel.newCharacter.constitution, title: "Constituição")
@@ -57,8 +60,10 @@ struct CharacterView: View {
             }
             VStack{
                 NavigationBar(title: "Visualização do Personagem")
+                ProgressBar()
+                    .padding(.top, 10)
                 Spacer()
-                ToolBar()
+                ToolBar(characterViewModel: $characterViewModel)
             }.ignoresSafeArea()
         }.navigationBarHidden(true)
     }

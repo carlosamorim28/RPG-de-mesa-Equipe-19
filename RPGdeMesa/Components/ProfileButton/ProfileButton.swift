@@ -8,8 +8,34 @@
 import SwiftUI
 
 struct ProfileButton: View {
-    @State var isPressed: Bool
+    @Binding var isPressed: Bool
+    var invert: Bool = false
+    var strokeColor: Color {
+        if(invert){
+            return !isPressed ? Color.white : Color.rpgBlue
+        }else {
+            
+            return isPressed ? Color.white : Color.rpgBlue
+        }
+    }
+    var backgroundColor: Color {
+        if(invert){
+            return !isPressed ? Color.rpgBlue : Color.white
+        }else {
+            
+            return isPressed ? Color.rpgBlue : Color.white
+        }
+    }
+    var textColor: Color {
+        if(invert){
+            return !isPressed ? Color.white : Color.rpgBlue
+        }else {
+            
+            return isPressed ? Color.white : Color.rpgBlue
+        }
+    }
     var title: String
+    
     var body: some View {
         Button {
             withAnimation{
@@ -18,12 +44,12 @@ struct ProfileButton: View {
         } label: {
             ZStack {
                 RoundedRectangle(cornerRadius: 8.0)
-                    .strokeBorder(isPressed ? Color.white : Color.rpgBlue, lineWidth: 1)
-                    .background(RoundedRectangle(cornerRadius: 8.0).fill(isPressed ? Color.rpgBlue : Color.white))
+                    .strokeBorder(strokeColor, lineWidth: 1)
+                    .background(RoundedRectangle(cornerRadius: 8.0).fill(backgroundColor))
                 
                 Text(title)
                     .font(.system(size: 16))
-                    .foregroundColor(isPressed ? Color.white : Color.rpgBlue)
+                    .foregroundColor(textColor)
             }
             .frame(height: 40)
         }
@@ -32,5 +58,5 @@ struct ProfileButton: View {
 }
 
 #Preview {
-    ProfileButton(isPressed: Bool(), title: "Personagens")
+    ProfileButton(isPressed: .constant(true), title: "Personagens")
 }

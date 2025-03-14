@@ -6,30 +6,53 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct ToolBar: View {
+    @Binding var characterViewModel: CharacterViewModel
+    @Environment (\.modelContext) var modelContext
+    @Query(sort: \SwiftDataCharacterModel.id, animation: .easeIn)
+    var characters: [SwiftDataCharacterModel] = []
+    func saveCharacter() {
+        let atualCharacter = characterViewModel.newCharacter
+        let newCharacter = SwiftDataCharacterModel(id: atualCharacter.id, name: atualCharacter.name, age: atualCharacter.age, height: atualCharacter.height, weight: atualCharacter.weight, alighment: atualCharacter.alighment, gender: atualCharacter.gender, classType: atualCharacter.classType, race: atualCharacter.race, profBonus: atualCharacter.profBonus, constitution: atualCharacter.constitution, strength: atualCharacter.strength, intelligence: atualCharacter.intelligence, dexterity: atualCharacter.dexterity, wise: atualCharacter.wise, charisma: atualCharacter.charisma, classArmor: atualCharacter.classArmor, pointsHit: atualCharacter.pointsHit, initiative: atualCharacter.initiative, deslocamento: atualCharacter.deslocamento, storyChar: atualCharacter.storyChar)
+        modelContext.insert(newCharacter)
+    }
+    @State var shouldNavigate = false
     var body: some View {
         ZStack{
-            Color(.white)
+            Color(.rpgTextSecundary)
             HStack(spacing: 24){
-                RoundedRectangle(cornerRadius: 8.0)
-                    .frame(height: 61.0)
-                    .foregroundColor(.rpgBlue)
-                    .overlay {
-                        Text("Salvar")
-                            .bold()
-                            .font(.system(size: 24.0))
-                            .foregroundColor(.white)
-                    }
-                Circle()
-                    .strokeBorder(lineWidth: 1.5)
-                    .frame(width: 61.0)
-                    .foregroundColor(.rpgBlue)
-                    .overlay{
-                        Image(.rpgEditIcon)
-                            .frame(width: 24)
-                            .foregroundColor(.rpgBlue)
-                    }
+//                NavigationLink {
+//                    Home(characterViewModel: .constant(.init()))
+//                        .navigationBarBackButtonHidden()
+//                } label: {
+                    RoundedRectangle(cornerRadius: 8.0)
+                        .frame(height: 61.0)
+                        .foregroundColor(.rpgBlue)
+                        .overlay {
+                            Text("Salvar")
+                                .bold()
+                                .font(.system(size: 24.0))
+                                .foregroundColor(.rpgBackground)
+                        }
+                        .onTapGesture {
+                            saveCharacter()
+                        }
+//                }
+//                NavigationLink{
+//                    CreateCharacter(characterViewModel: )
+//                } label: {
+                    Circle()
+                        .strokeBorder(lineWidth: 1.5)
+                        .frame(width: 61.0)
+                        .foregroundColor(.rpgBlue)
+                        .overlay{
+                            Image(.rpgEditIcon)
+                                .frame(width: 24)
+                                .foregroundColor(.rpgBlue)
+                        }
+//                }
                 
                 Circle()
                     .strokeBorder(lineWidth: 1.5)
@@ -48,5 +71,5 @@ struct ToolBar: View {
 }
 
 #Preview {
-    ToolBar()
+    ToolBar(characterViewModel: .constant(CharacterViewModel()))
 }

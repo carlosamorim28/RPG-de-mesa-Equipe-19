@@ -20,8 +20,14 @@
 		2237D4D12D80BE30004E7650 /* ProfileNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2237D4D02D80BE30004E7650 /* ProfileNavigationBar.swift */; };
 		2237D4D32D80D5C2004E7650 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2237D4D22D80D5C2004E7650 /* ListView.swift */; };
 		2237D4D52D80D614004E7650 /* AchievementsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2237D4D42D80D614004E7650 /* AchievementsView.swift */; };
-		226F44412D43CA23008D090F /* rpgAlgumacoisa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226F44402D43CA23008D090F /* rpgAlgumacoisa.swift */; };
+		2237D4D82D821C4A004E7650 /* Achievements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2237D4D72D821C4A004E7650 /* Achievements.swift */; };
+		2237D4DA2D82284A004E7650 /* testes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2237D4D92D82284A004E7650 /* testes.swift */; };
+		2237D4DD2D831C2C004E7650 /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2237D4DC2D831C2C004E7650 /* PhotoPicker.swift */; };
+		2237D4E02D8383B1004E7650 /* ProfileNavigationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2237D4DF2D8383B1004E7650 /* ProfileNavigationButton.swift */; };
+		226F44412D43CA23008D090F /* RPGAtributtes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226F44402D43CA23008D090F /* RPGAtributtes.swift */; };
 		226F44432D43D313008D090F /* RPGTypeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226F44422D43D313008D090F /* RPGTypeButton.swift */; };
+		228EF7CE2D84BCF800C281D7 /* HelpButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228EF7CD2D84BCF800C281D7 /* HelpButton.swift */; };
+		228EF7D12D84C4C600C281D7 /* DeleteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228EF7D02D84C4C600C281D7 /* DeleteButton.swift */; };
 		2296F3092D26F4FC007C8191 /* RPGNextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2296F3082D26F4FC007C8191 /* RPGNextButton.swift */; };
 		2296F30B2D285240007C8191 /* RPGTextFieldSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2296F30A2D285240007C8191 /* RPGTextFieldSection.swift */; };
 		22B1FF692D0BB21000F113F0 /* RPGdeMesaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B1FF682D0BB21000F113F0 /* RPGdeMesaApp.swift */; };
@@ -84,8 +90,14 @@
 		2237D4D02D80BE30004E7650 /* ProfileNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileNavigationBar.swift; sourceTree = "<group>"; };
 		2237D4D22D80D5C2004E7650 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		2237D4D42D80D614004E7650 /* AchievementsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsView.swift; sourceTree = "<group>"; };
-		226F44402D43CA23008D090F /* rpgAlgumacoisa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rpgAlgumacoisa.swift; sourceTree = "<group>"; };
+		2237D4D72D821C4A004E7650 /* Achievements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achievements.swift; sourceTree = "<group>"; };
+		2237D4D92D82284A004E7650 /* testes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testes.swift; sourceTree = "<group>"; };
+		2237D4DC2D831C2C004E7650 /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
+		2237D4DF2D8383B1004E7650 /* ProfileNavigationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileNavigationButton.swift; sourceTree = "<group>"; };
+		226F44402D43CA23008D090F /* RPGAtributtes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPGAtributtes.swift; sourceTree = "<group>"; };
 		226F44422D43D313008D090F /* RPGTypeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPGTypeButton.swift; sourceTree = "<group>"; };
+		228EF7CD2D84BCF800C281D7 /* HelpButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpButton.swift; sourceTree = "<group>"; };
+		228EF7D02D84C4C600C281D7 /* DeleteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteButton.swift; sourceTree = "<group>"; };
 		2296F3082D26F4FC007C8191 /* RPGNextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPGNextButton.swift; sourceTree = "<group>"; };
 		2296F30A2D285240007C8191 /* RPGTextFieldSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPGTextFieldSection.swift; sourceTree = "<group>"; };
 		22B1FF652D0BB21000F113F0 /* RPGdeMesa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RPGdeMesa.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -228,6 +240,46 @@
 			path = ProfileUser;
 			sourceTree = "<group>";
 		};
+		2237D4D62D821BE1004E7650 /* Achievements */ = {
+			isa = PBXGroup;
+			children = (
+				2237D4D72D821C4A004E7650 /* Achievements.swift */,
+			);
+			path = Achievements;
+			sourceTree = "<group>";
+		};
+		2237D4DB2D831C13004E7650 /* PhotosPicker */ = {
+			isa = PBXGroup;
+			children = (
+				2237D4DC2D831C2C004E7650 /* PhotoPicker.swift */,
+			);
+			path = PhotosPicker;
+			sourceTree = "<group>";
+		};
+		2237D4DE2D83838C004E7650 /* ProfileNavigationButton */ = {
+			isa = PBXGroup;
+			children = (
+				2237D4DF2D8383B1004E7650 /* ProfileNavigationButton.swift */,
+			);
+			path = ProfileNavigationButton;
+			sourceTree = "<group>";
+		};
+		228EF7CC2D84BC7900C281D7 /* HelpButton */ = {
+			isa = PBXGroup;
+			children = (
+				228EF7CD2D84BCF800C281D7 /* HelpButton.swift */,
+			);
+			path = HelpButton;
+			sourceTree = "<group>";
+		};
+		228EF7CF2D84C4B600C281D7 /* DeleteButton */ = {
+			isa = PBXGroup;
+			children = (
+				228EF7D02D84C4C600C281D7 /* DeleteButton.swift */,
+			);
+			path = DeleteButton;
+			sourceTree = "<group>";
+		};
 		22B1FF5C2D0BB21000F113F0 = {
 			isa = PBXGroup;
 			children = (
@@ -314,6 +366,11 @@
 		22B1FF962D0BBD5A00F113F0 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				228EF7CF2D84C4B600C281D7 /* DeleteButton */,
+				228EF7CC2D84BC7900C281D7 /* HelpButton */,
+				2237D4DE2D83838C004E7650 /* ProfileNavigationButton */,
+				2237D4DB2D831C13004E7650 /* PhotosPicker */,
+				2237D4D62D821BE1004E7650 /* Achievements */,
 				2237D4C92D80B1F7004E7650 /* ProfilePhoto */,
 				2237D4C62D80A5E1004E7650 /* ProfileButton */,
 				2237D4C02D7129E1004E7650 /* ViewCharacter */,
@@ -363,7 +420,7 @@
 			children = (
 				22B9872A2D3D4017009D4B4F /* CreatedCharacter.swift */,
 				22B9872C2D43C189009D4B4F /* RPGDetailsButton.swift */,
-				226F44402D43CA23008D090F /* rpgAlgumacoisa.swift */,
+				226F44402D43CA23008D090F /* RPGAtributtes.swift */,
 			);
 			path = CreatedCharacter;
 			sourceTree = "<group>";
@@ -416,6 +473,7 @@
 				22E5707C2D32E08100C8E430 /* Picker.swift */,
 				22E5707E2D32E0CD00C8E430 /* PickerDropdown.swift */,
 				22E570852D33151700C8E430 /* ScrollView.swift */,
+				2237D4D92D82284A004E7650 /* testes.swift */,
 			);
 			path = Teste;
 			sourceTree = "<group>";
@@ -595,18 +653,22 @@
 				22B9872D2D43C189009D4B4F /* RPGDetailsButton.swift in Sources */,
 				2237D4B72D694FEA004E7650 /* NavigationBar.swift in Sources */,
 				2237D4642D4DA6EB004E7650 /* CharacterModel.swift in Sources */,
+				2237D4D82D821C4A004E7650 /* Achievements.swift in Sources */,
 				22E5707A2D31F90500C8E430 /* FotoPicker.swift in Sources */,
 				22F008E22D343A9F00A27B0E /* ProgressBar.swift in Sources */,
 				2237D4C22D712A2F004E7650 /* ViewCharacter.swift in Sources */,
 				22E570892D334B9E00C8E430 /* CharacterAtributtes.swift in Sources */,
 				22D769802D31DF1700AC2141 /* SelectRPGButton.swift in Sources */,
 				22B9872B2D3D4017009D4B4F /* CreatedCharacter.swift in Sources */,
+				2237D4DD2D831C2C004E7650 /* PhotoPicker.swift in Sources */,
+				2237D4DA2D82284A004E7650 /* testes.swift in Sources */,
 				22B1FF952D0BB2F400F113F0 /* CreateCharacter.swift in Sources */,
 				2237D4CF2D80B425004E7650 /* ProfileUser.swift in Sources */,
 				22B1FF992D0BBD9A00F113F0 /* RPGTextField.swift in Sources */,
 				22F008D82D340A7700A27B0E /* ProfField.swift in Sources */,
-				226F44412D43CA23008D090F /* rpgAlgumacoisa.swift in Sources */,
+				226F44412D43CA23008D090F /* RPGAtributtes.swift in Sources */,
 				2237D4D32D80D5C2004E7650 /* ListView.swift in Sources */,
+				228EF7CE2D84BCF800C281D7 /* HelpButton.swift in Sources */,
 				22E570812D32E25100C8E430 /* PickerButton.swift in Sources */,
 				2237D4D52D80D614004E7650 /* AchievementsView.swift in Sources */,
 				22E570862D33151700C8E430 /* ScrollView.swift in Sources */,
@@ -617,9 +679,11 @@
 				22F008E02D343A1C00A27B0E /* ImageIcon.swift in Sources */,
 				2237D4D12D80BE30004E7650 /* ProfileNavigationBar.swift in Sources */,
 				22E5707D2D32E08100C8E430 /* Picker.swift in Sources */,
+				2237D4E02D8383B1004E7650 /* ProfileNavigationButton.swift in Sources */,
 				22B1FF6B2D0BB21000F113F0 /* ContentView.swift in Sources */,
 				2237D4B92D710F51004E7650 /* RPGTextFieldBackground.swift in Sources */,
 				22B1FF692D0BB21000F113F0 /* RPGdeMesaApp.swift in Sources */,
+				228EF7D12D84C4C600C281D7 /* DeleteButton.swift in Sources */,
 				2237D4C82D80A65B004E7650 /* ProfileButton.swift in Sources */,
 				22D769762D28C16600AC2141 /* CharacterView.swift in Sources */,
 				2237D4662D4DAAD5004E7650 /* CharacterViewModel.swift in Sources */,

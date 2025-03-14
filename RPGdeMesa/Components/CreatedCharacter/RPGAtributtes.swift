@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct rpgAlgumacoisa: View {
+struct RPGAtributtes: View {
     var body: some View {
         ZStack{
             Color(.blue)
@@ -21,5 +21,5 @@ struct rpgAlgumacoisa: View {
 }
 
 #Preview {
-    rpgAlgumacoisa()
+    RPGAtributtes()
 }

@@ -9,7 +9,14 @@ import SwiftUI
 
 struct AchievementsView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView(.vertical) {
+            VStack(spacing: 16) {
+                ForEach(0..<1) {index in
+                    Achievements(numChar: 6)
+                    Achievements(numChar: 3)
+                }
+            }
+        }
     }
 }
 

@@ -15,11 +15,11 @@ struct RPGTypeButton: View {
                 Image(.rpgSystem)
                     .resizable()
                     .frame(width: 64.0, height: 60.0)
-                    .foregroundColor(.white)
+                    .foregroundColor(.rpgBackground)
                 Text("Dungeons & Dragons")
                     .bold()
                     .font(.system(size: 16))
-                    .foregroundColor(.white)
+                    .foregroundColor(.rpgBackgroundComp)
             }
             .padding(.horizontal, 10.0)
             .padding(.vertical, 27.0)

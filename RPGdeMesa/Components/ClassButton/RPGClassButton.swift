@@ -34,7 +34,7 @@ struct RPGClassButton: View {
                 withAnimation{
                     onClick()
                 }
-            }
+            }.clipShape(RoundedRectangle(cornerRadius: 8))
             .overlay {
                 VStack(spacing: 10){
                     Image(buttonData.imageClass)
@@ -50,7 +50,7 @@ struct RPGClassButton: View {
 }
 
 struct ClassSelectionView: View {
-    @ObservedObject var characterViewModel: CharacterViewModel
+   var characterViewModel: CharacterViewModel
 
     var body: some View {
         ScrollView(.horizontal) {

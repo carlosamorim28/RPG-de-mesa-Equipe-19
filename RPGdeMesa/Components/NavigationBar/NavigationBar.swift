@@ -17,16 +17,16 @@ struct NavigationBar: View {
                 HStack(spacing: 16){
                     ZStack{
                         Circle()
-                            .foregroundColor(.white)
+                            .foregroundColor(.rpgTextSecundary)
                             .frame(width: 46)
                         Image(.navigationIcon)
-                            .foregroundColor(.black)
+                            .foregroundColor(.rpgTextPrimary)
                     }
                     .onTapGesture {
                         dismiss()
                     }
                      Text(title)
-                        .foregroundColor(.white)
+                        .foregroundColor(.rpgTextSecundary)
                         .font(.system(size: 20))
                     Spacer()
                 }.padding(16)

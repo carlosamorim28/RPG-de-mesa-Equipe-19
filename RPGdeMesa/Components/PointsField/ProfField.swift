@@ -16,7 +16,7 @@ struct ProfField: View {
                 .multilineTextAlignment(.center)
                 .padding(16)
                 .frame(width: 64, height: 64)
-                .background(Color.white)
+                .background(Color.rpgBackgroundText)
                 .foregroundColor(.rpgBlue)
                 .bold()
                 .font(.largeTitle)
@@ -38,6 +38,7 @@ struct ProfField: View {
             Text("Bônus de Proficiência")
                 .fontWeight(.medium)
                 .font(.title2)
+                .foregroundColor(.rpgTextPrimary)
         }
     }
 }

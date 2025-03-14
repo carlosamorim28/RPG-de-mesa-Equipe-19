@@ -6,21 +6,13 @@
 //
 
 import SwiftUI
-import PhotosUI
+
 struct CreateCharacter: View {
-    @State private var selectedItem: PhotosPickerItem? = nil
-    @State private var selectedImage: UIImage? = nil
     @Binding var characterViewModel: CharacterViewModel
     var body: some View {
-        ZStack {
-            Color.rpgBackground.ignoresSafeArea()
-//            VStack(spacing: 16){
-//                NavigationBar(title: "Informações Básicas & Aparência")
-//                ProgressBar()
-//                Spacer()
-//            }.ignoresSafeArea()
-//            
             ZStack{
+                Color.rpgBackground.ignoresSafeArea()
+            
                 VStack() { //Gerenciar tela
                     HStack {
                         RPGTextField(value: $characterViewModel.newCharacter.name, title: "Nome do personagem", textInitial: "Ex: Harry Potter")
@@ -31,37 +23,8 @@ struct CreateCharacter: View {
                     }
                     Text("Upload de Imagem do Personagem (png, jpg)")
                         .fontWeight(.medium)
-                    PhotosPicker(
-                        selection: $selectedItem,
-                        matching: .images,
-                        photoLibrary: .shared()) {
-                            HStack{
-                                Spacer()
-                                Text("Clique aqui")
-                                    .bold()
-                                    .padding()
-                                    .foregroundColor(.rpgBlue)
-                                Image(systemName: "square.and.arrow.up")
-                                    .foregroundColor(.rpgBlue)
-                                    .frame(width: 25, height: 25)
-                                Spacer()
-                            }
-                            .cornerRadius(8.0)
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 8.0)
-                                    .strokeBorder()
-                                    .foregroundColor(.rpgStrokeChar)
-                            )
-                        }
-                        .background(Color.white)
-                        .onChange(of: selectedItem) { newItem in
-                            Task {
-                                if let data = try? await newItem?.loadTransferable(type: Data.self),
-                                   let uiImage = UIImage(data: data) {
-                                    characterViewModel.newCharacter.image = uiImage
-                                }
-                            }
-                        }
+                    PhotoPicker(characterViewModel: .constant(CharacterViewModel()))
+                    
                     HStack {
                         RPGTextField(value: $characterViewModel.newCharacter.height, title: "Altura", textInitial: "Ex: 1,60")
                             .padding(.trailing, 8)
@@ -76,21 +39,23 @@ struct CreateCharacter: View {
                     }
                     ClassSelectionView(characterViewModel: CharacterViewModel())
                     Spacer()
-                        .frame(height: 100)
+                        .frame(height: 120)
+                }.padding(.top, 160.0)
+                 .padding(.horizontal, 16)
+                Spacer()
+                
+                VStack(spacing: 16){
+                    NavigationBar(title: "Informações Básicas & Aparência")
+                    ProgressBar()
+                    Spacer()
                     NavigationLink {
                         SelectRace(characterViewModel: $characterViewModel)
                     } label: {
                         RPGNextButton()
-                    }
-                }.padding(.top, 160.0)
-                Spacer()
-            }.padding(16)
-            VStack(spacing: 16){
-                NavigationBar(title: "Informações Básicas & Aparência")
-                ProgressBar()
-                Spacer()
-            }.ignoresSafeArea()
-        }.navigationBarHidden(true)
+                    }.padding(16)
+                }.ignoresSafeArea()
+                
+            }.navigationBarHidden(true)
     }
 }
 

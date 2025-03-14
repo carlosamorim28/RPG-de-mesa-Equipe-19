@@ -16,6 +16,7 @@ struct PickerButton: View {
             Text(title)
                 .bold()
                 .padding(.vertical, -4.0)
+                .foregroundColor(.rpgTextPrimary)
             Menu {
                 ForEach(options, id: \.self) { option in
                     Button(action: {
@@ -30,10 +31,10 @@ struct PickerButton: View {
             } label: {
                 HStack {
                     Text(selectedOption)
-                        .foregroundColor(.black)
+                        .foregroundColor(.rpgTextPrimary)
                     Spacer()
                     Image(systemName: "chevron.down")
-                        .foregroundColor(.black)
+                        .foregroundColor(.rpgTextPrimary)
                 }
                 .padding()
             }
@@ -43,7 +44,8 @@ struct PickerButton: View {
                     .strokeBorder()
                     .foregroundColor(.rpgStrokeChar)
             )
-            .background(Color.white)
+            .background(Color.rpgBackgroundText)
+            .clipShape(RoundedRectangle(cornerRadius: 8))
         }
     }
 }

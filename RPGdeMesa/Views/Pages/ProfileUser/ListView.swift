@@ -9,14 +9,27 @@ import SwiftUI
 
 struct ListView: View {
     @State var characterViewModel: CharacterViewModel = CharacterViewModel()
+
     var body: some View {
         ZStack{
-            List(characterViewModel.listCharacters) { CharacterModel in
-                CreatedCharacter(character: CharacterModel)
-            }.scrollContentBackground(.hidden)
+            ScrollView {
+                LazyVGrid(columns: [GridItem(.flexible(), spacing: 16), GridItem(.flexible(), spacing: 16)], spacing: 16) {
+                    ForEach(characterViewModel.listCharacters) { character in
+                        CreatedCharacter(character: character)
+                    }
+                }.padding(.horizontal, 16)
+            }.frame(maxWidth: .infinity)
+            VStack{
+                Spacer()
+                HStack{
+                    Spacer()
+                    DeleteButton()
+                }.padding()
+            }
         }
     }
 }
+
 
 #Preview {
     ListView()

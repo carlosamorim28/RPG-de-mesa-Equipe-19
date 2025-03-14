@@ -50,15 +50,20 @@ struct CharacterAtributtes: View {
                     PointsField(value: $characterViewModel.newCharacter.deslocamento, title: "Deslocamento")
                 }
                 Spacer()
-                    .frame(height: 185)
+            }.padding(.horizontal, 16.0)
+            .padding(.top, 160)
+            
+            VStack(spacing: 16){
+                NavigationBar(title: "Espécie do Personagem")
+                ProgressBar()
+                Spacer()
                 NavigationLink {
                     CharacterBackground(characterViewModel: $characterViewModel)
                 } label: {
                     RPGNextButton()
-                }
-            }.padding(.horizontal, 16.0)
-        }
-        
+                }.padding(16)
+            }.ignoresSafeArea()
+        }.navigationBarHidden(true)
     }
 }
 
