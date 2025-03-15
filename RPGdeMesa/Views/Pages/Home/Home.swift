@@ -50,7 +50,7 @@ struct Home: View {
                     ScrollView(.horizontal){
                         HStack{
                             //CreatedCharacter(character: CharacterModel()) //Testar scrollview
-                            ForEach(characterViewModel.listCharacters){ character in
+                            ForEach(characterViewModel.listCharacters) { character in
                                 CreatedCharacter(character: character)
                             }
                         }

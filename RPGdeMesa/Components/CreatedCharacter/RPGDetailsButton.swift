@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct RPGDetailsButton: View {
-//    var characterViewModel: CharacterViewModel
+//    @Binding var characterViewModel: CharacterViewModel
     var body: some View {
         NavigationLink {
-//            CharacterView(characterViewModel: characterViewModel)
+//            CharacterView(characterViewModel: $characterViewModel)
         } label: {
             HStack(spacing: 8){
                 Text("Ver detalhes")
@@ -24,6 +24,6 @@ struct RPGDetailsButton: View {
     }
 }
 
-#Preview {
-    RPGDetailsButton(/*characterViewModel: characterViewModel*/)
-}
+//#Preview {
+//    RPGDetailsButton(characterViewModel: characterViewModel)
+//}

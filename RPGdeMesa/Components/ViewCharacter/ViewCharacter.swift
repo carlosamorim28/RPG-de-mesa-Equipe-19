@@ -13,7 +13,7 @@ struct ViewCharacter: View {
         ZStack{
             Color.rpgBackground.ignoresSafeArea()
             VStack{
-                Image(.rpgCharacter)
+                Image(uiImage: character.image ?? UIImage())
                     .resizable()
                     .frame(height: 160)
                     .overlay{
