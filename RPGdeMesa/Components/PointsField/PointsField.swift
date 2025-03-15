@@ -23,7 +23,6 @@ struct PointsField: View {
                 .padding(16)
                 .frame(height: 48)
                 .background(Color.rpgBackgroundText)
-                .border(Color.black)
                 .cornerRadius(8.0)
                 .overlay(
                     RoundedRectangle(cornerRadius: 8.0)

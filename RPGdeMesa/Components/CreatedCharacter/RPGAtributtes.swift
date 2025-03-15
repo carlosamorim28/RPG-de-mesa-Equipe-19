@@ -13,6 +13,7 @@ struct RPGAtributtes: View {
             Color(.blue)
             Image(.rpgMageIcon)
                 .resizable()
+                .foregroundColor(.rpgBackgroundText)
                 .padding(10.0)
         }
         .frame(width: 36.0, height: 36.0)

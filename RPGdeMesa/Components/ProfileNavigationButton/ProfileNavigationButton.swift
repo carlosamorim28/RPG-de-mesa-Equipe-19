@@ -18,7 +18,7 @@ struct ProfileNavigationButton: View {
                 .overlay(
                     Image(systemName: "person")
                         .frame(width: 18.8)
-                        .foregroundColor(.white)
+                        .foregroundColor(.rpgTextSecundary)
                 )
         }
     }

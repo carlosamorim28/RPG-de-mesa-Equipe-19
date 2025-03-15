@@ -14,15 +14,10 @@ class CharacterViewModel{
     var newCharacter: CharacterModel = CharacterModel()
     
     func addCharacter(character: CharacterModel){
-            listCharacters.insert(character, at: 0)
+        listCharacters.insert(character, at: 0)
     }
-    
-//    func deleteCharacter(at offsets: IndexSet){
-//        for index in offsets {
-//            listCharacters.remove(SwiftDataCharacterModel[index])
-//        }
-//    }
 }
+
 //deleteNote(at offsets: IndexSet) {
 //        for index in offsets {
 //            modelContext.delete(notes[index])

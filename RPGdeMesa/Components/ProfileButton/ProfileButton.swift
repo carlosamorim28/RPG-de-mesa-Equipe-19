@@ -12,26 +12,26 @@ struct ProfileButton: View {
     var invert: Bool = false
     var strokeColor: Color {
         if(invert){
-            return !isPressed ? Color.white : Color.rpgBlue
+            return !isPressed ? Color.rpgTextSecundary : Color.rpgBlue
         }else {
             
-            return isPressed ? Color.white : Color.rpgBlue
+            return isPressed ? Color.rpgTextSecundary : Color.rpgBlue
         }
     }
     var backgroundColor: Color {
         if(invert){
-            return !isPressed ? Color.rpgBlue : Color.white
+            return !isPressed ? Color.rpgBlue : Color.rpgTextSecundary
         }else {
             
-            return isPressed ? Color.rpgBlue : Color.white
+            return isPressed ? Color.rpgBlue : Color.rpgTextSecundary
         }
     }
     var textColor: Color {
         if(invert){
-            return !isPressed ? Color.white : Color.rpgBlue
+            return !isPressed ? Color.rpgTextSecundary : Color.rpgBlue
         }else {
             
-            return isPressed ? Color.white : Color.rpgBlue
+            return isPressed ? Color.rpgTextSecundary : Color.rpgBlue
         }
     }
     var title: String

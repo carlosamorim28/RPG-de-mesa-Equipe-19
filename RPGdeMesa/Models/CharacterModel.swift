@@ -70,7 +70,7 @@ class SwiftDataCharacterModel: Identifiable{
     var age: String = ""
     var height: String = ""
     var weight: String = ""
-//    var image: UIImage
+    var image: Data
     var alighment: String = ""
     var gender: String = ""
     var classType: String = ""
@@ -88,13 +88,13 @@ class SwiftDataCharacterModel: Identifiable{
     var deslocamento: Int = 0
     var storyChar: String = ""
 
-    init(id: UUID, name: String, age: String, height: String, weight: String, image: UIImage? = nil, alighment: String, gender: String, classType: String, race: String, profBonus: Int, constitution: Int, strength: Int, intelligence: Int, dexterity: Int, wise: Int, charisma: Int, classArmor: Int, pointsHit: Int, initiative: Int, deslocamento: Int, storyChar: String) {
+    init(id: UUID, name: String, age: String, height: String, weight: String, image: Data? = nil, alighment: String, gender: String, classType: String, race: String, profBonus: Int, constitution: Int, strength: Int, intelligence: Int, dexterity: Int, wise: Int, charisma: Int, classArmor: Int, pointsHit: Int, initiative: Int, deslocamento: Int, storyChar: String) {
         self.id = id
         self.name = name
         self.age = age
         self.height = height
         self.weight = weight
-//        self.image = image ?? UIImage()
+        self.image = image ?? Data()
         self.alighment = alighment
         self.gender = gender
         self.classType = classType
@@ -119,7 +119,7 @@ class SwiftDataCharacterModel: Identifiable{
             age: self.age,
             height: self.height,
             weight: self.weight,
-//            image: self.image,
+            image: UIImage(data: self.image),
             alighment: self.alighment,
             gender: self.gender,
             classType: self.classType,

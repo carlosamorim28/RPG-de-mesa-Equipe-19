@@ -12,7 +12,7 @@ struct Achievements: View {
     var numChar: Int
     var body: some View {
         ZStack{
-            Color(.white)
+            Color(.rpgBackgroundComp)
             HStack(alignment: .top){
                 Image(.rpgAchievements)
                     .resizable()
@@ -21,8 +21,10 @@ struct Achievements: View {
                     Text(title)
                         .font(.system(size: 16))
                         .bold()
+                        .foregroundColor(.rpgTextPrimary)
                     Text("Você criou \(numChar) personagens usando o CharCraft!")
                         .font(.system(size: 14))
+                        .foregroundColor(.rpgTextPrimary)
                 }.padding(8)
                 Spacer()
             }

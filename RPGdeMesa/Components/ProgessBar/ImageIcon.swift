@@ -15,7 +15,7 @@ struct SwiftUIView: View {
                 .frame(width: 40.0, height: 40.0)
                 .foregroundColor(.rpgBlue)
             Image(systemName: imageIcon)
-                .foregroundColor(.white)
+                .foregroundColor(.rpgTextSecundary)
                 .frame(width: 20.0, height: 20.0)
         }
     }

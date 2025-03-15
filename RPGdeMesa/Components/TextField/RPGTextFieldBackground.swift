@@ -23,7 +23,6 @@ struct RPGTextFieldBackground: View {
                     .padding(.top, -110.0)
                     .multilineTextAlignment(.leading)
                     .frame(height: 220)
-                    .border(Color.black)
                     .cornerRadius(8.0)
                     .foregroundColor(.rpgTextPrimary)
                     .background(Color.rpgBackgroundText)

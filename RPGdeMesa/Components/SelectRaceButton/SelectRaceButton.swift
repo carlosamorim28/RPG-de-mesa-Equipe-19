@@ -62,7 +62,7 @@ struct RaceGridView: View {
         ("Draconato", "rpgDragonbornRace"),
         ("Tiefling", "rpgTieflingRace"),
         ("Meio-Orc", "rpgHalfOrfRace")]
-    var characterViewModel: CharacterViewModel
+   @Binding var characterViewModel: CharacterViewModel
     var body: some View{
         ScrollView {
             LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 16) {
@@ -83,5 +83,5 @@ struct RaceGridView: View {
 
 #Preview {
 //    SelectRaceButton(onClick: {})
-    RaceGridView(characterViewModel: CharacterViewModel())
+    RaceGridView(characterViewModel: .constant(CharacterViewModel()))
 }

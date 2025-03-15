@@ -27,6 +27,7 @@ struct ViewCharacter: View {
                     }
 
                     Text("\(character.name), \(character.age) anos")
+                        .foregroundColor(.rpgTextPrimary)
                         .bold()
                         .font(.system(size: 24))
                         .padding(.leading, 8.0)
@@ -36,21 +37,21 @@ struct ViewCharacter: View {
                     VStack{
                         Text("\(character.height) de altura")
                             .font(.system(size: 16))
-                            .foregroundColor(.gray)
+                            .foregroundColor(.rpgTextTertiary)
                         
                         Text("\(character.weight) kg")
                             .font(.system(size: 16))
-                            .foregroundColor(.gray)
+                            .foregroundColor(.rpgTextTertiary)
                     }
                     Spacer()
                     VStack{
                         Text("Alinhamento Moral")
                             .font(.system(size: 16))
-                            .foregroundColor(.gray)
+                            .foregroundColor(.rpgTextTertiary)
                         
                         Text("\(character.alighment) ")
                             .font(.system(size: 16))
-                            .foregroundColor(.gray)
+                            .foregroundColor(.rpgTextTertiary)
                     }
                 }
                     

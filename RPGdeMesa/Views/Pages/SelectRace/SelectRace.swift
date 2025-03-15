@@ -13,7 +13,7 @@ struct SelectRace: View {
             ZStack{
                 Color.rpgBackground.ignoresSafeArea()
                 VStack{
-                    RaceGridView(characterViewModel: CharacterViewModel())
+                    RaceGridView(characterViewModel: $characterViewModel)
                     Spacer()
                 }.padding(.top, 160)
                 

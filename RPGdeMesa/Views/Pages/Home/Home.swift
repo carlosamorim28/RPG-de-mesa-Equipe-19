@@ -13,6 +13,9 @@ struct Home: View {
     @Environment (\.modelContext) var modelContext
     @Query(animation: .easeIn) 
     var characters: [SwiftDataCharacterModel] = []
+    func deleteCharacter(deleteElement: SwiftDataCharacterModel){
+        modelContext.delete(deleteElement)
+    }
     var body: some View {
         ZStack {
             Color.rpgBackground.ignoresSafeArea()
@@ -68,6 +71,7 @@ struct Home: View {
                     age: swiftDataCharacterModel.age,
                     height: swiftDataCharacterModel.height,
                     weight: swiftDataCharacterModel.weight,
+                    image: UIImage(data: swiftDataCharacterModel.image),
                     alighment: swiftDataCharacterModel.alighment,
                     gender: swiftDataCharacterModel.gender,
                     classType: swiftDataCharacterModel.classType,
@@ -85,6 +89,7 @@ struct Home: View {
                     deslocamento: swiftDataCharacterModel.deslocamento,
                     storyChar: swiftDataCharacterModel.storyChar
                 ))
+//                deleteCharacter(deleteElement: swiftDataCharacterModel)
             }
         }
     }

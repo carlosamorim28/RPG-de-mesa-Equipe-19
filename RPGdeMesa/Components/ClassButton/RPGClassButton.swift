@@ -28,8 +28,8 @@ struct RPGClassButton: View {
        RoundedRectangle(cornerRadius: 8)
             .strokeBorder(lineWidth: 1.0)
             .frame(width: 100, height: 100)
-            .foregroundColor(isSelected ? Color.rpgBlue : Color.black)
-            .background(isSelected ? Color.rpgBlue : Color.rpgBackground)
+            .foregroundColor(isSelected ? Color.rpgBlue : Color.rpgStrokeChar)
+            .background(isSelected ? Color.rpgBlue : Color.rpgBackgroundText)
             .onTapGesture {
                 withAnimation{
                     onClick()
@@ -38,11 +38,11 @@ struct RPGClassButton: View {
             .overlay {
                 VStack(spacing: 10){
                     Image(buttonData.imageClass)
-                        .foregroundColor(isSelected ? Color.white : Color.black)
+                        .foregroundColor(isSelected ? Color.rpgTextSecundary : Color.rpgClass)
                         .font(.title)
    
                     Text(buttonData.title)
-                        .foregroundColor(isSelected ? Color.white : Color.black)
+                        .foregroundColor(isSelected ? Color.rpgTextSecundary : Color.rpgClass)
                         .fontWeight(.medium)
                 }
             }
@@ -50,7 +50,7 @@ struct RPGClassButton: View {
 }
 
 struct ClassSelectionView: View {
-   var characterViewModel: CharacterViewModel
+   @Binding var characterViewModel: CharacterViewModel
 
     var body: some View {
         ScrollView(.horizontal) {
@@ -89,5 +89,5 @@ func selectButtonStyle(value: TypeButton) -> (ButtonDataModel, String) {
 }
 #Preview {
 //    RPGClassButton(buttonData: selectButtonStyle(value: .mage), isSelected: Bool, onClick: {print("clicou!")})
-    ClassSelectionView(characterViewModel: CharacterViewModel())
+    ClassSelectionView(characterViewModel: .constant(CharacterViewModel()))
 }

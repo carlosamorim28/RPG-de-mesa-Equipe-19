@@ -12,7 +12,7 @@ struct AchievementsView: View {
         ScrollView(.vertical) {
             VStack(spacing: 16) {
                 ForEach(0..<1) {index in
-                    Achievements(numChar: 6)
+//                    Achievements(numChar: 6)
                     Achievements(numChar: 3)
                 }
             }

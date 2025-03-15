@@ -32,7 +32,7 @@ struct PhotoPicker: View {
             }
             .background(
                 RoundedRectangle(cornerRadius: 8.0)
-                    .fill(Color.white)
+                    .fill(Color.rpgBackgroundText)
             )
             .overlay(
                 RoundedRectangle(cornerRadius: 8.0)

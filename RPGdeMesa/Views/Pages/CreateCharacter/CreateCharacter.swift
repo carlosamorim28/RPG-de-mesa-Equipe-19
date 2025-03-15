@@ -23,7 +23,7 @@ struct CreateCharacter: View {
                     }
                     Text("Upload de Imagem do Personagem (png, jpg)")
                         .fontWeight(.medium)
-                    PhotoPicker(characterViewModel: .constant(CharacterViewModel()))
+                    PhotoPicker(characterViewModel: $characterViewModel)
                     
                     HStack {
                         RPGTextField(value: $characterViewModel.newCharacter.height, title: "Altura", textInitial: "Ex: 1,60")
@@ -37,7 +37,7 @@ struct CreateCharacter: View {
                         PickerButton(options: ["Outro", "Masculino", "Feminino"], title: "Gênero")
                             .padding(.leading, 8)
                     }
-                    ClassSelectionView(characterViewModel: CharacterViewModel())
+                    ClassSelectionView(characterViewModel: $characterViewModel)
                     Spacer()
                         .frame(height: 120)
                 }.padding(.top, 160.0)

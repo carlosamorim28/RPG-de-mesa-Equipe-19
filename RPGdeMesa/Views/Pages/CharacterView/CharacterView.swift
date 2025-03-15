@@ -10,6 +10,7 @@ import SwiftData
 
 struct CharacterView: View {
     @Binding var characterViewModel: CharacterViewModel
+    @Environment(\.dismiss) var dismiss
     var body: some View {
         ZStack{
             Color.rpgBackground.ignoresSafeArea()

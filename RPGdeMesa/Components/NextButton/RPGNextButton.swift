@@ -16,7 +16,7 @@ struct RPGNextButton: View {
                 Text("Avançar")
                     .bold()
                     .font(.system(size: 24))
-                    .foregroundColor(.white)
+                    .foregroundColor(.rpgTextSecundary)
             }
    }
 }

@@ -11,9 +11,9 @@ struct CreatedCharacter: View {
     var character: CharacterModel
     var body: some View {
         ZStack{
-            Color(.white)
+            Color(.rpgBackgroundComp)
             VStack(alignment: .leading, spacing: 8){
-                Image(.rpgCharacter) //$selectedImage
+                Image(uiImage: character.image ?? UIImage()) 
                     .resizable()
                     .frame(width: 180.0, height: 105.0)
                     .clipShape(RoundedRectangle(cornerRadius: 8))

@@ -31,10 +31,10 @@ struct ProfileUser: View {
                     Text("\(viewModel.listCharacters.count.formatted(.number.precision(.integerLength(2)))) \nPersonagens \ncriados")
                         .multilineTextAlignment(.center)
                     
-                    Text("\(02.formatted(.number.precision(.integerLength(2)))) \nConquistas")
+                    Text("\(1.formatted(.number.precision(.integerLength(2)))) \nConquistas")
                         .multilineTextAlignment(.center)
                     
-                    Text("\(01.formatted(.number.precision(.integerLength(2)))) \nSistema de RPG \nExplorado")
+                    Text("\(1.formatted(.number.precision(.integerLength(2)))) \nSistema de RPG \nExplorado")
                         .multilineTextAlignment(.center)
                 }
                 HStack(spacing: 8){
@@ -42,7 +42,7 @@ struct ProfileUser: View {
                     ProfileButton(isPressed: $isCharacterSelected, invert: true, title: "Conquistas")
                 }
                 .padding(10)
-                .background(Color.white)
+                .background(Color.rpgTextSecundary)
                 if(isCharacterSelected){
                     ListView()
                         .transition(.opacity)
